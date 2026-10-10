@@ -1,0 +1,30 @@
+# Render blueprint: the Intermaptic API as a Node web service.
+#
+# With this file committed, Render can create the service from the repository in
+# one step: New + -> Blueprint -> pick this repo. It also works if you prefer to
+# create a Web Service by hand - the values below are exactly what to enter.
+#
+#   Build command: npm ci
+#   Start command: node server/index.mjs
+#
+# The frontend stays on GitHub Pages; this service is only the JSON API.
+services:
+  - type: web
+    name: intermaptic-api
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm ci
+    startCommand: node server/index.mjs
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      # The API never needs the frontend's dependencies to run, but npm ci is the
+      # simplest build that leaves a complete, reproducible tree.
+      - key: NODE_VERSION
+        value: '20.11.1'
+      # Set this to your GitHub Pages origin to lock the API down, for example
+      # https://arnsgaming8.github.io . Leave it unset to allow any origin, which
+      # is the default for this public read-only data.
+      - key: ALLOWED_ORIGINS
+        sync: false

@@ -1,0 +1,8 @@
+# Keep line endings LF in the repository. The site is built and deployed on Linux,
+# so this avoids CRLF churn between contributors and CI.
+* text=auto eol=lf
+
+# Binary assets, never touched.
+*.png binary
+*.jpg binary
+*.ico binary

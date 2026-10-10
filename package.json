@@ -1,0 +1,32 @@
+{
+  "name": "intermaptic",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Intermaptic - an interactive 3D holographic Earth comparing the United States and Canada.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "serve": "vite preview --host --port 4173",
+    "start": "node server/index.mjs",
+    "check": "node scripts/check-atlas.mjs",
+    "check:reading": "node scripts/check-reading-level.mjs",
+    "check:api": "node scripts/check-api.mjs",
+    "check:all": "node scripts/check-atlas.mjs && node scripts/check-reading-level.mjs && node scripts/check-api.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.114.3",
+    "@react-three/fiber": "^8.17.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
+    "vite": "^5.4.10"
+  }
+}
