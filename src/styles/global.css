@@ -1201,6 +1201,18 @@ button {
   letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--line);
+  margin: 0 0 6px;
+}
+
+/* License line. Held tight under the name it belongs to, and dimmed to the readout
+   grey so the credit stays the brighter of the two. The 20px below it is what keeps
+   the pair off the body copy. */
+.intro__license {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-dim);
   margin: 0 0 20px;
 }
 
