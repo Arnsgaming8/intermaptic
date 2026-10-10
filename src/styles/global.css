@@ -733,7 +733,7 @@ button {
   color: var(--text-dim);
 }
 
-/* Reading block */
+/* Section blocks */
 .section-block {
   padding: 14px var(--panel-pad) 16px;
   border-bottom: 1px solid var(--line-faint);
@@ -750,11 +750,6 @@ button {
   font-family: var(--font-mono);
   font-size: 10px;
   color: var(--amber);
-}
-
-.section-block__glyphs {
-  font-size: 11px;
-  letter-spacing: 3px;
 }
 
 .section-block__title {

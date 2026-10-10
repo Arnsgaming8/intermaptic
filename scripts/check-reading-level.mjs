@@ -2,9 +2,9 @@
  * Reading-level check.
  *
  * Every word a reader sees about the United States and Canada must be readable by a
- * 6th grader: short sentences, everyday words, no semicolons, no em dashes. The panels
- * are also meant to stay short - a stop shows a brief reading, not an article - so the
- * four sections of a stop are held to two sentences each.
+ * 6th grader: short sentences, everyday words, no semicolons, no em dashes. A stop shows
+ * a full reading rather than a note, so each of its four sections is held to exactly
+ * eight sentences, which is enough to explain the place.
  *
  * Run with:  node scripts/check-reading-level.mjs
  *
@@ -20,8 +20,8 @@ const url = (relative) => pathToFileURL(resolve(ROOT, relative)).href
 
 const MAX_WORDS = 15
 
-/** A stop's four sections are a glance, not an article. */
-const MAX_SECTION_SENTENCES = 2
+/** A stop's four sections each spell the place out in exactly this many sentences. */
+const SENTENCES_PER_SECTION = 8
 
 /** Words a 12-year-old would not meet in everyday reading. */
 const HARD_WORDS = [
@@ -95,10 +95,10 @@ function inspect({ where, text }) {
     }
   })
 
-  // Only the four sections per stop carry this limit: facts are fragments, and a
+  // Only the four sections per stop carry this rule: facts are fragments, and a
   // comparison bullet is allowed to make more than one point.
-  if (where.includes('.sections.') && sentences.length > MAX_SECTION_SENTENCES) {
-    problems.push(`${sentences.length} sentences, but a section takes ${MAX_SECTION_SENTENCES}`)
+  if (where.includes('.sections.') && sentences.length !== SENTENCES_PER_SECTION) {
+    problems.push(`${sentences.length} sentences, but a section holds ${SENTENCES_PER_SECTION}`)
   }
 
   const lower = text.toLowerCase()
@@ -138,7 +138,7 @@ console.log(`sentences:            ${sentenceCount}`)
 console.log(`average words/sent:   ${(wordCount / sentenceCount).toFixed(1)}`)
 console.log(`longest sentence:     ${longest.words} words  (${longest.where})`)
 console.log(`stops / pairs:        ${STOPS.length} / ${PAIRS.length}`)
-console.log(`sections per stop:    ${MAX_SECTION_SENTENCES} sentences max`)
+console.log(`sections per stop:    ${SENTENCES_PER_SECTION} sentences each`)
 console.log('')
 
 if (failures.length) {

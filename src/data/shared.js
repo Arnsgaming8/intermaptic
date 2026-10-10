@@ -12,7 +12,7 @@
  *   pair:        comparison-pair id (see PAIRS in locations.js)
  *   facts:       [{ label, value }] - exactly 3 short quick-facts
  *   sections:    { geography, culture, government, economy }
- *                - each exactly two sentences of plain prose (the reading-level check enforces this)
+ *                - each exactly eight sentences of plain prose (the reading-level check enforces this)
  *   comparison:  ['bullet', 'bullet'] - 2-3 bullets contrasting this stop with
  *                its paired stop in the other country. Name the other city
  *                explicitly. No markdown, no headings inside the strings.
@@ -38,13 +38,13 @@ export const SHARED_STOPS = [
     ],
     sections: {
       geography:
-        'Niagara Falls is on the Niagara River, between Ontario and New York State. Nine parts in ten of the river go over Horseshoe Falls on the Canadian side.',
+        'Niagara Falls is on the Niagara River, between Ontario and New York State. Nine parts in ten of the river go over Horseshoe Falls on the Canadian side. The river runs about fifty-eight kilometres from Lake Erie north to Lake Ontario. There are three falls: Horseshoe Falls, American Falls and Bridal Veil Falls. Horseshoe Falls is the widest, and the other two stand on the American side. The falls are the start of a gorge about eleven kilometres long. Hard rock sits on top of a softer layer of shale. Water wears the soft layer away, so the falls creep upstream each year.',
       culture:
-        'The falls are the oldest tourist site in North America. About twelve million people visit each year, and both towns grew up around the crowds.',
+        'The falls are the oldest tourist site in North America. About twelve million people visit each year, and both towns grew up around the crowds. Long before the towns, Haudenosaunee people lived along the river. They carried canoes overland around the falls, because boats could not pass. Both sides have a town called Niagara Falls, and the Canadian one is larger. The Maid of the Mist boats have carried visitors to the base since 1846. Visitors walk through tunnels behind the falling water on the Canadian side. The falls are lit with coloured lights after dark, and fireworks follow in summer.',
       government:
-        'No single government owns the falls. In 1950 the two countries signed the Niagara Diversion Treaty to share the water.',
+        'No single government owns the falls. In 1950 the two countries signed the Niagara Diversion Treaty to share the water. Each side is looked after by its own parks body. New York State made the land around the falls its first state park in 1885. Ontario set up the Niagara Parks Commission in the same year. A treaty from 1909 created the International Joint Commission to settle water disputes. The 1950 treaty also sets a minimum flow that must go over the falls. At night and in winter, more water is allowed to go to the power plants.',
       economy:
-        'The Sir Adam Beck and Robert Moses plants make more than four gigawatts together. Tourists bring in several billion dollars a year to the towns on both sides.',
+        'The Sir Adam Beck and Robert Moses plants make more than four gigawatts together. Tourists bring in several billion dollars a year to the towns on both sides. Both companies are publicly owned, one by Ontario and one by New York State. Water reaches the plants through long tunnels, so it never goes over the falls. A big tunnel finished in 2013 carries extra water to the Canadian plant. The power is sold to homes, businesses and factories in both countries. Hotels, restaurants and two casinos employ many people on both sides. Farms and wineries inland from the falls also earn money from visitors.',
     },
     comparison: [
       'The Grand Canyon sits inside just one country. Niagara Falls belongs to both countries, and they run it under a signed deal.',
