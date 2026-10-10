@@ -300,3 +300,21 @@ npm run dev
 - The 6th grade rules are measured on sentence length and a word list. That is a good guess at how easy text is to read. It is not a replacement for a teacher's judgement.
 - The API is read-only public data. There are no accounts and no writes. There is no rate limiting beyond the host's edge caching.
 - The free Render instance sleeps when it is idle. So the first visit after a quiet spell shows the built-in atlas. About half a minute later, the live one takes over.
+
+---
+
+## License
+
+Intermaptic is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/) (CC BY-NC 4.0). The full legal code is in [LICENSE](LICENSE).
+
+Copyright (c) 2026 Arnav Jugessur.
+
+You may share and adapt this work for non-commercial purposes, as long as you credit the author and link to the license. Commercial use is not permitted.
+
+Third-party material keeps its own license:
+
+- The earth textures are public-domain NASA imagery, taken from the MIT-licensed [three-globe](https://github.com/vasturiano/three-globe) project.
+- The npm dependencies are MIT licensed.
+- Orbitron, Rajdhani and Share Tech Mono load from Google Fonts under the Open Font License.
+
+CC BY-NC 4.0 is written for creative works rather than for software, so it says nothing about source distribution or patents. The license still applies to this repository as a whole.

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Intermaptic - an interactive 3D holographic Earth comparing the United States and Canada.",
+  "license": "CC-BY-NC-4.0",
   "engines": {
     "node": ">=18"
   },
