@@ -104,7 +104,18 @@ export const MODEL_TUNING = {
 export const GLOBE_TUNING = {
   radius: 2.4,
   segments: 128,
-  minZoomDistance: 3.1,
+  /**
+   * Zoom range: from the surface of the globe out to the whole planet in frame.
+   *
+   * `minZoomDistance` used to stop the camera a good way above the ground, so the
+   * closest you could ever get to a stop was a distant look. It is now the globe's
+   * own `radius` plus the camera's near plane (0.1, set in Scene.jsx), which is as
+   * close as the eye can go while the shell underfoot still renders: the camera
+   * ends up 0.1 world units above the surface, with the ground filling the view.
+   * Going right down to bare `radius` would put the near plane through the shell
+   * and leave a hole in the foreground.
+   */
+  minZoomDistance: 2.5,
   maxZoomDistance: 12,
   /** Distance the camera parks at when a stop is focused. */
   focusDistance: 4.35,
