@@ -6,6 +6,9 @@
  * slow or down, every call resolves to `null` and the app falls back to the copy of
  * the data that is bundled into this build - the site must never blank out because
  * a network request failed.
+ *
+ * The one exception is a sleeping backend: a free instance that has gone to sleep is
+ * worth waiting for, so `pingApi` lets the app tell "asleep" apart from "gone".
  */
 
 const RAW_BASE = (import.meta.env.VITE_API_BASE || '').trim()
@@ -60,6 +63,33 @@ async function getJson(path, { timeoutMs = 4500 } = {}) {
 /** Fetch the whole atlas. Resolves to `null` on any failure. */
 export async function fetchAtlas(options) {
   return validateAtlas(await getJson('/api/atlas', options))
+}
+
+/**
+ * Ask whether the API instance is awake.
+ *
+ * A free hosting tier puts an idle instance to sleep, and a sleeping instance
+ * answers nothing at all. This probe asks one question only: did the server reply?
+ * Any status counts as awake, so a backend that is up but reporting a problem stops
+ * the wait instead of being pinged forever.
+ */
+export async function pingApi({ timeoutMs = 4000 } = {}) {
+  if (!API_ENABLED) return false
+
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), timeoutMs)
+  try {
+    await fetch(`${API_BASE}/api/health`, {
+      signal: controller.signal,
+      headers: { accept: 'application/json' },
+      cache: 'no-store',
+    })
+    return true
+  } catch {
+    return false
+  } finally {
+    clearTimeout(timer)
+  }
 }
 
 /** Search the backend. Resolves to `null` on any failure. */

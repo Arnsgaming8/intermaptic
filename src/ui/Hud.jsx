@@ -61,7 +61,13 @@ export default function Hud() {
   const lat = focused ? focused.lat.toFixed(2) : '--.--'
   const lng = focused ? focused.lng.toFixed(2) : '--.--'
 
-  const sourceLabel = source === 'live' ? 'LIVE API' : source === 'connecting' ? 'SYNCING' : 'LOCAL'
+  const SOURCE_LABELS = {
+    live: 'LIVE API',
+    connecting: 'SYNCING',
+    waking: 'WAKING',
+    bundled: 'LOCAL',
+  }
+  const sourceLabel = SOURCE_LABELS[source] || 'LOCAL'
 
   return (
     <>

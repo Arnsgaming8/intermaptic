@@ -1,18 +1,31 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import {
   ACTIVE_PAIRS,
   PAIRS,
   STOPS,
 } from '../data/locations.js'
-import { API_BASE, API_ENABLED, fetchAtlas } from '../lib/api.js'
+import { API_BASE, API_ENABLED, fetchAtlas, pingApi } from '../lib/api.js'
 
 const AtlasContext = createContext(null)
 
 /**
- * How long to wait before re-asking an API that did not answer the first time, and
- * how long to give that second ask. Both are generous because the retry happens
- * out of sight: the bundled atlas is already on screen by then, so a slow answer
- * costs nothing but a quiet upgrade to live data.
+ * Boot timings.
+ *
+ * A warm instance answers the first ask in a fraction of a second, so the loading
+ * screen never appears and nothing is pinged. A sleeping one answers nothing at all,
+ * which is what the probe window detects; from then on the app pings until the
+ * instance wakes or the budget runs out, and the bundled atlas takes over.
+ */
+const PROBE_TIMEOUT_MS = 5000
+const WAKE_PING_INTERVAL_MS = 2500
+const WAKE_PING_TIMEOUT_MS = 4000
+const WAKE_BUDGET_MS = 95000
+const WAKE_LOAD_TIMEOUT_MS = 25000
+
+/**
+ * How long to wait before quietly re-asking an API that never came back, and how
+ * long to give that ask. It happens out of sight: the bundled atlas is already on
+ * screen, so a slow answer costs nothing but a quiet upgrade to live data.
  */
 const RETRY_DELAY_MS = 25000
 const RETRY_TIMEOUT_MS = 45000
@@ -28,6 +41,8 @@ const RETRY_TIMEOUT_MS = 45000
 export function AtlasProvider({ children }) {
   const [remote, setRemote] = useState(null)
   const [source, setSource] = useState(API_ENABLED ? 'connecting' : 'bundled')
+  const [wakePings, setWakePings] = useState(0)
+  const stopBoot = useRef(null)
 
   const [nationFilter, setNationFilter] = useState('all')
   const [kindFilter, setKindFilter] = useState('all')
@@ -42,34 +57,82 @@ export function AtlasProvider({ children }) {
   useEffect(() => {
     if (!API_ENABLED) return undefined
     let cancelled = false
-    let retry = null
+    const timers = new Set()
 
-    const attempt = (isRetry) => {
-      fetchAtlas(isRetry ? { timeoutMs: RETRY_TIMEOUT_MS } : undefined).then((payload) => {
+    const later = (fn, ms) => {
+      const id = setTimeout(fn, ms)
+      timers.add(id)
+      return id
+    }
+
+    /** Let the reader leave the loading screen without waiting for the backend. */
+    stopBoot.current = () => {
+      cancelled = true
+      timers.forEach(clearTimeout)
+      timers.clear()
+    }
+
+    const settle = (payload) => {
+      if (payload) {
+        setRemote(payload)
+        setSource('live')
+      } else {
+        setSource('bundled')
+      }
+    }
+
+    /** One quiet re-ask, out of sight, after the app has already fallen back. */
+    const quietRetry = () => later(() => {
+      fetchAtlas({ timeoutMs: RETRY_TIMEOUT_MS }).then((payload) => {
+        if (!cancelled) settle(payload)
+      })
+    }, RETRY_DELAY_MS)
+
+    /** Ping a sleeping instance until it answers, then take the atlas from it. */
+    const ping = (deadline) => {
+      pingApi({ timeoutMs: WAKE_PING_TIMEOUT_MS }).then((awake) => {
         if (cancelled) return
-        if (payload) {
-          setRemote(payload)
-          setSource('live')
+        setWakePings((count) => count + 1)
+
+        if (awake) {
+          fetchAtlas({ timeoutMs: WAKE_LOAD_TIMEOUT_MS }).then((payload) => {
+            if (cancelled) return
+            settle(payload)
+            // It answered but its atlas is unusable: that is a broken deploy, not a
+            // sleeping instance, so stop pinging and let one quiet retry cover it.
+            if (!payload) quietRetry()
+          })
           return
         }
-        // The API did not answer with something usable - keep the bundled atlas.
-        setSource('bundled')
-        // Free hosting tiers put an idle instance to sleep, and the wake-up takes
-        // far longer than a page load will wait. Asking once more in the
-        // background means a cold backend still upgrades to the live atlas
-        // without the reader reloading anything.
-        if (!isRetry) {
-          retry = setTimeout(() => attempt(true), RETRY_DELAY_MS)
+
+        if (Date.now() >= deadline) {
+          setSource('bundled')
+          quietRetry()
+          return
         }
+        later(() => ping(deadline), WAKE_PING_INTERVAL_MS)
       })
     }
 
-    attempt(false)
+    fetchAtlas({ timeoutMs: PROBE_TIMEOUT_MS }).then((payload) => {
+      if (cancelled) return
+      if (payload) {
+        settle(payload)
+        return
+      }
+      // Nothing came back inside the probe window. On a free host that means the
+      // instance is asleep, so the reader gets a loading screen and pings start.
+      setSource('waking')
+      ping(Date.now() + WAKE_BUDGET_MS)
+    })
 
-    return () => {
-      cancelled = true
-      if (retry) clearTimeout(retry)
-    }
+    return () => stopBoot.current?.()
+  }, [])
+
+  /** The reader would rather read the bundled atlas than wait for a cold backend. */
+  const skipWake = useCallback(() => {
+    stopBoot.current?.()
+    setSource('bundled')
   }, [])
 
   const stops = remote?.stops?.length ? remote.stops : STOPS
@@ -194,6 +257,10 @@ export function AtlasProvider({ children }) {
       showLink,
       setShowLink,
       source,
+      /** True while a sleeping backend is being woken, so the loading screen shows. */
+      waking: source === 'waking',
+      wakePings,
+      skipWake,
       apiBase: API_BASE,
       apiEnabled: API_ENABLED,
     }),
@@ -226,6 +293,8 @@ export function AtlasProvider({ children }) {
       showBorder,
       showLink,
       source,
+      wakePings,
+      skipWake,
     ],
   )
 

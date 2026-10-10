@@ -6,6 +6,7 @@ import InfoPanel from './ui/InfoPanel.jsx'
 import ComparePanel from './ui/ComparePanel.jsx'
 import AtlasPanel from './ui/AtlasPanel.jsx'
 import Intro from './ui/Intro.jsx'
+import LoadingScreen from './ui/LoadingScreen.jsx'
 import { validateAtlas } from './data/locations.js'
 
 export default function App() {
@@ -63,6 +64,10 @@ function Shell() {
       <div className="crt-overlay" aria-hidden="true" />
 
       <Intro open={introOpen} onDismiss={() => setIntroOpen(false)} />
+
+      {/* Cold-start cover. It renders last so it sits above the splash, and it is
+          gone the moment the backend answers. */}
+      <LoadingScreen />
     </div>
   )
 }

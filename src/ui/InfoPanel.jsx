@@ -2,16 +2,22 @@ import { useAtlas } from '../state/AtlasContext.jsx'
 import { KINDS, NATION } from '../lib/theme.js'
 import { codeOf } from '../data/locations.js'
 
-const SECTIONS = [
-  { key: 'geography', title: 'Geography', icon: '▲' },
-  { key: 'culture', title: 'Culture', icon: '✦' },
-  { key: 'government', title: 'Government', icon: '★' },
-  { key: 'economy', title: 'Economy', icon: '◆' },
+/**
+ * The four subjects a stop is written about, in reading order, with the glyph that
+ * stands for each. They are read as one paragraph, so the panel reads as prose about
+ * the place instead of four separate notes.
+ */
+const TOPICS = [
+  { key: 'geography', glyph: '▲' },
+  { key: 'culture', glyph: '✦' },
+  { key: 'government', glyph: '★' },
+  { key: 'economy', glyph: '◆' },
 ]
 
 /**
- * The reading panel for one stop: four subject sections plus the head-to-head
- * comparison notes that explain how it differs from its counterpart across the border.
+ * The reading panel for one stop: a single paragraph covering geography, culture,
+ * government and economy, plus the head-to-head comparison notes that explain how it
+ * differs from its counterpart across the border.
  */
 export default function InfoPanel() {
   const { selectedStop, selectedPair, counterpart, select, clear } = useAtlas()
@@ -51,18 +57,20 @@ export default function InfoPanel() {
       </div>
 
       <div className="panel__body side-panel__body">
-        {SECTIONS.map((section, index) => (
-          <article className="section-block" key={section.key}>
-            <div className="section-block__head">
-              <span className="section-block__index">{String(index + 1).padStart(2, '0')}</span>
-              <span style={{ color: kind.tint }} aria-hidden="true">
-                {section.icon}
-              </span>
-              <h3 className="section-block__title">{section.title}</h3>
-            </div>
-            <p className="section-block__text">{selectedStop.sections[section.key]}</p>
-          </article>
-        ))}
+        <article className="section-block">
+          <div className="section-block__head">
+            <span className="section-block__index">01</span>
+            <span className="section-block__glyphs" style={{ color: kind.tint }} aria-hidden="true">
+              {TOPICS.map((topic) => topic.glyph).join('')}
+            </span>
+            <h3 className="section-block__title">Reading</h3>
+          </div>
+          <p className="section-block__text">
+            {TOPICS.map((topic) => selectedStop.sections?.[topic.key])
+              .filter(Boolean)
+              .join(' ')}
+          </p>
+        </article>
 
         <section className="compare-block">
           <div className="compare-block__head">
