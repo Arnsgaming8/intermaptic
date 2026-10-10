@@ -31,9 +31,9 @@ export const US_EXTRA_STOPS = [
         'Tourism is the main business in the Black Hills. About two million people visit the memorial each year.',
     },
     comparison: [
-      'Mount Rushmore is famous for what people carved into it. Gros Morne is famous for rock the Earth pushed up. Both show off stone that is over a billion years old.',
-      'The faces at Mount Rushmore were carved on purpose. The Tablelands at Gros Morne were not touched by people. They are pieces of ocean floor pushed up onto land.',
-      'Mount Rushmore sits in the middle of the country, far from any coast. Gros Morne sits on the Atlantic coast of Newfoundland. One draws visitors by road, the other by boat and trail.',
+      'Mount Rushmore is famous for what people carved into it. Gros Morne is famous for billion-year-old rock the Earth pushed up.',
+      'The faces at Mount Rushmore were carved on purpose. The Tablelands at Gros Morne are pieces of ocean floor pushed up onto land.',
+      'Mount Rushmore sits in the middle of the country, far from any coast. Gros Morne sits on the Atlantic coast of Newfoundland.',
     ],
   },
   {
@@ -62,9 +62,9 @@ export const US_EXTRA_STOPS = [
         'Space launches bring jobs and tourists to the Florida coast. Private companies such as SpaceX now launch from the same site.',
     },
     comparison: [
-      'Kennedy Space Center launches rockets into space. Churchill, Manitoba once had a rocket range of its own. Both are small places that study very big things.',
-      'Kennedy is on a warm coast in Florida. Churchill sits on cold Hudson Bay in the far north. The two have almost opposite weather all year.',
-      'The space center draws about a million and a half visitors a year. Churchill draws far fewer, but people travel there to see polar bears. Both depend on visitors who come for science.',
+      'Both are small places that study very big things. Kennedy launches rockets, and Churchill, Manitoba once had a rocket range.',
+      'Kennedy is on a warm coast in Florida. Churchill sits on cold Hudson Bay in the far north.',
+      'The space center draws about a million and a half visitors a year. Churchill draws far fewer, but people travel there to see polar bears.',
     ],
   },
   {
@@ -93,9 +93,9 @@ export const US_EXTRA_STOPS = [
         'Almost all the money in the area comes from visitors. Buses carry tourists into the park on one road.',
     },
     comparison: [
-      'Denali is a mountain with no towns and no road to the top. Iqaluit is a small Arctic capital where people live all year. Both sit far north, where very few people live.',
-      'Climbers go to Denali for a few weeks in summer. People in Iqaluit stay through dark winters that last for months. One is a place to visit, the other a place to live.',
-      'Denali is land that the federal government set aside as a park. Iqaluit is the capital of Nunavut, a territory run mostly by Inuit people. Both are far from the big cities of their countries.',
+      'Denali is a mountain with no towns and no road to the top. Iqaluit is a small Arctic capital where people live all year.',
+      'Climbers go to Denali for a few weeks in summer. People in Iqaluit stay through dark winters that last for months.',
+      'Denali is land the federal government set aside as a park. Iqaluit is the capital of Nunavut, run mostly by Inuit people.',
     ],
   },
   {
@@ -124,9 +124,9 @@ export const US_EXTRA_STOPS = [
         'The dam makes about 2,000 megawatts of electricity with seventeen turbines. That power and water serve farms and cities in three states.',
     },
     comparison: [
-      'Hoover Dam holds a river back with a wall made by people. The Bay of Fundy has the biggest tides in the world. Nobody built that one. The Moon did.',
-      'People manage the Colorado River to decide who gets water. Nobody can manage the tide in the Bay of Fundy. It rises and falls about twice a day.',
-      'Lake Mead behind the dam is one of the largest reservoirs in the United States. The Bay of Fundy is a natural bay between New Brunswick and Nova Scotia. One was made in the 1930s, the other has been there for ages.',
+      'Hoover Dam holds a river back with a wall made by people. The Bay of Fundy has the biggest tides on Earth, and nobody built those.',
+      'People manage the Colorado River to decide who gets water. Nobody can manage the Bay of Fundy tide, which rises twice a day.',
+      'Lake Mead behind the dam is one of the largest US reservoirs. The Bay of Fundy is a natural bay between New Brunswick and Nova Scotia.',
     ],
   },
 ]

@@ -38,9 +38,9 @@ export const CA_EXTRA_STOPS = [
         'Fishing is the main work here, with boats catching lobster, scallops and herring. A small tidal power station ran for years at Annapolis Royal.',
     },
     comparison: [
-      'The Hoover Dam holds a river back with a wall that people built. The Bay of Fundy has no wall. The Moon pulls the ocean in and out instead.',
-      'Both places are about water and power. The dam makes electricity on purpose. The bay moves huge amounts of water. Almost none of it powers anything yet.',
-      'The dam sits in a hot desert where rain is rare. The Bay of Fundy sits on a cool coast with rain all year. Its tides never stop, because the Moon and the Sun never stop.',
+      'The Hoover Dam holds a river back with a wall that people built. The Bay of Fundy has no wall. The Moon pulls its ocean in and out.',
+      'Both places are about water and power. The dam makes electricity, but almost none of the bay water powers anything yet.',
+      'The dam sits in a hot desert where rain is rare. The bay sits on a cool coast, and its tides never stop.',
     ],
   },
   {
@@ -69,9 +69,9 @@ export const CA_EXTRA_STOPS = [
         'Government jobs are the biggest employer, and food and fuel cost a lot. Almost everything is flown or shipped in, and mining brings money.',
     },
     comparison: [
-      'Both places are far north and very empty. Denali is one tall mountain with almost nobody living on it. Iqaluit is a town of a few thousand people who run their own government.',
+      'Both places sit far north with few people. Denali is one tall mountain, while Iqaluit is a town that runs its own government.',
       'Denali is protected as a national park in the United States. Iqaluit is a working capital city with schools, shops and a legislature.',
-      'Both have long dark winters. Denali draws climbers from around the world. Iqaluit draws people who want to see Inuit culture and the northern lights.',
+      'Both have long dark winters. Denali draws climbers, and Iqaluit draws people who want to see Inuit culture.',
     ],
   },
   {
@@ -100,9 +100,9 @@ export const CA_EXTRA_STOPS = [
         'Fishing used to support almost everyone, but the cod fishery closed in the 1990s. Tourism is now the main work, with hotels, boat tours and hiking guides.',
     },
     comparison: [
-      'Both places show very old rock out in the open. Mount Rushmore is granite that people carved into faces. Gros Morne is rock the Earth pushed up by itself.',
-      'Mount Rushmore is a small memorial in South Dakota. Gros Morne is a large national park on an island. Both are protected by the national government.',
-      'Mount Rushmore draws visitors who come to look for an hour. Gros Morne draws visitors who come to hike for days. The rock in Gros Morne is a rare kind. It is usually buried deep under the sea.',
+      'Both places show very old rock in the open. Mount Rushmore is granite people carved, and Gros Morne is rock the Earth pushed up.',
+      'Mount Rushmore is a small memorial in South Dakota. Gros Morne is a large island park, and the national government protects both.',
+      'Mount Rushmore draws visitors who stay for an hour. Gros Morne draws hikers, and its rare rock is usually buried under the sea.',
     ],
   },
   {
@@ -131,9 +131,9 @@ export const CA_EXTRA_STOPS = [
         'Churchill is a grain port where wheat from the prairies is loaded onto ships. A rocket range ran from the 1950s to the 1980s, and tourism is growing.',
     },
     comparison: [
-      'Both are small places that study big things. Kennedy Space Center sends rockets into space. Churchill studies polar bears, sea ice and the northern sky.',
-      'Kennedy Space Center sits in warm Florida and draws millions of visitors. Churchill sits on a cold bay and draws far fewer. Both are far from the big cities.',
-      'Churchill had its own rocket range from the 1950s to the 1980s. It launched small rockets to study the upper air. Kennedy still launches much bigger rockets today.',
+      'Both are small places that study big things. Kennedy sends rockets up, and Churchill studies bears and sea ice.',
+      'Kennedy Space Center sits in warm Florida and draws millions of visitors. Churchill sits on a cold bay, far from any big city.',
+      'Churchill had its own rocket range from the 1950s to the 1980s. Kennedy still launches much bigger rockets today.',
     ],
   },
 ]

@@ -47,9 +47,9 @@ export const SHARED_STOPS = [
         'The Sir Adam Beck and Robert Moses plants make more than four gigawatts together. Tourists bring in several billion dollars a year to the towns on both sides.',
     },
     comparison: [
-      'The Grand Canyon sits inside just one country. One park service runs it. Niagara Falls belongs to both countries. They run it together under a deal they signed.',
-      'Only about a quarter of Niagara’s water can be taken to make electricity. The two countries do not compete for it. Their power systems share it instead.',
-      'Niagara makes about four gigawatts of water power. That is enough electricity for millions of homes. The Grand Canyon makes almost no power of its own. The Glen Canyon and Hoover dams sit far downstream.',
+      'The Grand Canyon sits inside just one country. Niagara Falls belongs to both countries, and they run it under a signed deal.',
+      'Only about a quarter of Niagara’s water can be taken to make electricity. The two countries do not compete for it, and their power systems share it.',
+      'Niagara makes about four gigawatts of water power. The Grand Canyon makes almost none, though Hoover and Glen Canyon dams sit downstream.',
     ],
   },
 ]

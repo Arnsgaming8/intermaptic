@@ -26,9 +26,9 @@ export const CA_STOPS = [
         'The federal government is by far Ottawa’s biggest employer. Technology companies grew up around it, working on software and security.',
     },
     comparison: [
-      'Washington, D.C. was made into its own district, separate from every state. Ottawa stayed inside Ontario and simply uses some of its land. So the capital area spreads across two provinces instead of being its own.',
-      'Both cities are government towns. Washington also has the Smithsonian museums, the World Bank and the federal courts. Ottawa has a smaller role. It has fewer private companies, most of them in technology.',
-      'Washington is run by an elected president. That one person is both the head of state and the head of the government. Ottawa answers to a prime minister who leads Parliament. A Governor General stands in for the king.',
+      'Washington, D.C. became its own district, separate from every state. Ottawa stayed inside Ontario, so its capital area spreads over two provinces.',
+      'Both are government towns, but Washington has the Smithsonian museums and the World Bank. Ottawa has fewer private companies, mostly in technology.',
+      'An elected president runs Washington and leads both the state and the government. Ottawa answers to a prime minister, with a Governor General standing in for the king.',
     ],
   },
   {
@@ -57,9 +57,9 @@ export const CA_STOPS = [
         'Bay Street is where Canada’s money business is centred. The city makes about one fifth of everything Canada produces.',
     },
     comparison: [
-      'New York City is a money centre for the whole world. Wall Street there sets prices in the money most countries use. Toronto is the money centre for Canada. Its market is much smaller. A few big banks run most of it.',
-      'Both are the biggest cities in their countries and the main place where immigrants arrive. New York runs five boroughs with a powerful mayor that voters elect. Toronto sits under a province. That province can change its city council and its powers. It has done so.',
-      'New York is the centre of an area with about twenty million people. Its films and TV shows go out all over the world. Toronto is the centre of an area with about six and a half million. It mostly sells its culture to one nearby country.',
+      'New York City is a world money centre, where Wall Street sets prices. Toronto is far smaller, and a few big banks run most of it.',
+      'Both are the biggest cities in their countries and the main place immigrants arrive. New York has a powerful elected mayor, but a province can change Toronto’s council.',
+      'New York is the centre of an area with about twenty million people. Toronto has about six and a half million, and mostly sells its culture nearby.',
     ],
   },
   {
@@ -88,9 +88,9 @@ export const CA_STOPS = [
         'The Port of Vancouver is the biggest port in Canada. Grain, coal and wood from the Prairies leave the country through it.',
     },
     comparison: [
-      'The Bay Area became rich from Stanford University, money from investors and software. Vancouver became rich from its port, its natural resources and film making. Very few of the world’s biggest technology companies have their main office in Vancouver.',
-      'Both are costly cities on the Pacific coast with many people from Asia. San Francisco is in a state with its own strong law-making body. It also has a powerful mayor. Vancouver answers to a province. That province decides on buses and trains. It also decides on housing rules and on money from resources.',
-      'The Bay Area has a housing problem spread across dozens of separate cities. Vancouver has one crowded city. It is squeezed between water, mountains and land kept for farming.',
+      'The Bay Area became rich from Stanford University, investors and software. Vancouver became rich from its port and film making, with few big technology offices.',
+      'Both are costly Pacific coast cities with many people from Asia. San Francisco has a strong state, but a province decides Vancouver’s buses and housing rules.',
+      'The Bay Area’s housing problem spreads across dozens of cities. Vancouver is one crowded city, squeezed between water, mountains and farmland.',
     ],
   },
   {
@@ -119,9 +119,9 @@ export const CA_STOPS = [
         'Calgary is where Canada’s energy companies have their main offices. Oil prices make the city’s economy jump up and down.',
     },
     comparison: [
-      'Chicago is an inland city that grew on trains, water and the trading of goods. Calgary is an inland city. It grew on one resource, oil and gas. It also grew on the company offices that run it.',
-      'Both cities matter far more in business than their size suggests. Chicago sits in the middle of a busy factory region. The land around Calgary is empty prairie and oil fields.',
-      'Chicago’s troubles are closing factories and money problems. Calgary’s troubles come from its ups and downs. Jobs appear and vanish when oil prices change. The province that controls its oil money sits in another city.',
+      'Chicago is an inland city that grew on trains and trade. Calgary grew on oil and gas, and on the company offices that run it.',
+      'Both cities matter more in business than their size suggests. Chicago sits among busy factories, while Calgary sits on empty prairie.',
+      'Chicago’s troubles are closing factories and money problems. Calgary’s jobs appear and vanish with oil prices, and its oil money is controlled elsewhere.',
     ],
   },
   {
@@ -151,8 +151,8 @@ export const CA_STOPS = [
     },
     comparison: [
       'Los Angeles sells more films and TV shows around the world than anywhere else. Montreal makes films and video games too, but mostly for people who speak French.',
-      'Both cities have many immigrants. Both have a big second language. Los Angeles has Spanish, and Montreal has French. Montreal goes further. Its language rules are part of provincial law. They cover store signs, schools and public services. No American city has rules like that.',
-      'Los Angeles is a huge group of dozens of cities. It has no one clear centre. Montreal is a crowded island run by one city hall and nineteen borough councils.',
+      'Both cities have many immigrants and a big second language. Montreal’s language rules are provincial law, covering store signs, schools and public services.',
+      'Los Angeles is dozens of cities with no one centre. Montreal is a crowded island run by one city hall and nineteen borough councils.',
     ],
   },
   {
@@ -181,9 +181,9 @@ export const CA_STOPS = [
         'Almost all the work in Banff comes from tourists. Most jobs are seasonal, and homes are hard to find.',
     },
     comparison: [
-      'The Grand Canyon was cut by one river running through a dry, flat plateau. The Rockies were shaped mostly by ice. Slow sheets of ice carved wide valleys. They left the bright blue-green lakes Banff is famous for.',
-      'The Grand Canyon is run by the National Park Service. The federal government owns the land. No towns sit inside the park. Banff has a real town with its own mayor and council. The federal government still controls how the land is used.',
-      'Both are about a five-hour drive from big cities. Both draw millions of visitors a year. The Grand Canyon sits in a hot desert about two thousand metres up. Banff sits in a cold mountain valley. It is covered in snow for half the year.',
+      'The Grand Canyon was cut by one river through a dry plateau. The Rockies were shaped by ice, which left the blue-green lakes Banff is famous for.',
+      'The Grand Canyon is run by the National Park Service and has no towns. Banff has its own town and mayor, but the federal government controls the land.',
+      'Both are about a five-hour drive from big cities and draw millions of visitors. The Grand Canyon is hot desert, while Banff is snow-covered half the year.',
     ],
   },
   {
@@ -212,9 +212,9 @@ export const CA_STOPS = [
         'Quebec City depends on government work, tourism, insurance and technology. Old Quebec brings in millions of visitors each year.',
     },
     comparison: [
-      'New Orleans began as a French town. Today it mixes French, Caribbean and African cultures. French survives mostly in names and street signs. Quebec City is still French-speaking. French is its only official language, and the government works to protect it.',
-      'Both cities draw crowds to an old quarter beside the water. Old Quebec still has its stone walls and an upper town on a cliff. The French Quarter in New Orleans is a flat grid. Its low buildings sit around Jackson Square.',
-      'New Orleans is a city inside a state. It has little control over its own rules. The state government in Baton Rouge often overrules it. Quebec City is a capital itself. It holds provincial power that New Orleans can only ask for.',
+      'New Orleans began as a French town and still mixes Caribbean and African cultures. Quebec City is still French-speaking, with French as its only official language.',
+      'Both draw crowds to an old quarter beside the water. Old Quebec has stone walls, while the French Quarter is a flat grid.',
+      'New Orleans is a city inside a state, and Baton Rouge often overrules it. Quebec City is a capital itself, holding provincial power.',
     ],
   },
 ]

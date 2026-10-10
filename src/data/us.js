@@ -30,9 +30,9 @@ export const US_STOPS = [
         'The federal government is the biggest employer, with law firms and lobbying groups around it. A technology corridor runs west, and Northern Virginia holds more data centres than anywhere else.',
     },
     comparison: [
-      'Washington was built on empty land starting in 1790. It was planned as a capital from the start. Ottawa was picked in 1857 as a deal between Montreal and Toronto. It grew out of a logging town. That town was already there on the Ottawa River.',
-      'Congress can overrule laws passed in Washington. It also controls the city budget. Ottawa is a normal city inside Ontario. No federal body can make laws for it.',
-      'People in Washington pay federal taxes. They do not get a voting seat in Congress. People in Ottawa vote for Parliament just like other Canadians do.',
+      'Washington was built on empty land, starting in 1790. Ottawa was picked in 1857 as a deal between Montreal and Toronto.',
+      'Congress can overrule laws passed in Washington and controls its budget. Ottawa is a normal city inside Ontario, with no federal body above it.',
+      'People in Washington pay federal taxes but have no voting seat in Congress. People in Ottawa vote for Parliament like other Canadians.',
     ],
   },
   {
@@ -61,9 +61,9 @@ export const US_STOPS = [
         'Wall Street and the New York Stock Exchange sit at the centre of the economy. The port of New York and New Jersey is the busiest on the East Coast.',
     },
     comparison: [
-      'About eight times more people live in New York than in Toronto. Both cities hold their country\u2019s main stock exchange. Both also lead the news and media business at home.',
-      'Both downtowns are famous for money and banking. The New York Stock Exchange is the biggest market in the world. The Toronto Stock Exchange is medium-sized compared with it.',
-      'Both are the top place where people new to the country first arrive. Toronto takes in a bigger share of Canada\u2019s newcomers than New York does of America\u2019s.',
+      'About eight times more people live in New York than in Toronto. Both hold their country\u2019s main stock exchange and lead the news business.',
+      'The New York Stock Exchange is the biggest market in the world. The Toronto Stock Exchange is medium-sized compared with it.',
+      'Both are the top place where people new to the country first arrive. Toronto takes in a bigger share of Canada\u2019s newcomers than New York does.',
     ],
   },
   {
@@ -92,9 +92,9 @@ export const US_STOPS = [
         'The Bay Area leads the world in software and in money for new companies. The Port of Oakland is one of the busiest in the country.',
     },
     comparison: [
-      'Both are port cities on the Pacific. Both have mild, rainy winters and big Asian communities. Oakland ships the Bay Area\u2019s goods. Vancouver is Canada\u2019s busiest port.',
-      'The Bay Area is much bigger than Vancouver. It runs on software and money from investors. Vancouver has real tech jobs too, but far fewer. Many of them are branch offices of US companies.',
-      'Homes cost too much in both places. Both are among the priciest markets in North America. Both also draw more skilled newcomers than their country as a whole does.',
+      'Both are port cities on the Pacific with big Asian communities. Oakland ships the Bay Area\u2019s goods, and Vancouver is Canada\u2019s busiest port.',
+      'The Bay Area is much bigger than Vancouver and runs on software. Vancouver has real tech jobs too, but many are branch offices.',
+      'Homes cost too much in both places, among the priciest in North America. Both also draw more skilled newcomers than their country as a whole.',
     ],
   },
   {
@@ -123,9 +123,9 @@ export const US_STOPS = [
         'Chicago is the freight and train crossing of the continent. It has the biggest futures market on Earth, and one of the busiest airports.',
     },
     comparison: [
-      'Chicago is the train and shipping hub of the continent. Calgary is the oil and gas capital. Both sit far from the coast. Both get their power from moving goods or pulling resources out of the ground.',
-      'Chicago makes many different things, so hard times in one industry do not sink it. Calgary makes far less overall. Its good years and bad years follow the price of oil and gas.',
-      'Both are newer cities on flat plains. Both built busy downtowns in the 1900s. Both matter more in their country than their size would suggest. Each one has a single big industry.',
+      'Chicago is the train and shipping hub of the continent. Calgary is the oil and gas capital, and both sit far from the coast.',
+      'Chicago makes many different things, so hard times in one industry do not sink it. Calgary\u2019s good years and bad years follow the price of oil and gas.',
+      'Both are newer cities on flat plains that built busy downtowns in the 1900s. Each one matters more in its country than its size would suggest.',
     ],
   },
   {
@@ -154,9 +154,9 @@ export const US_STOPS = [
         'Movies and TV are the city\u2019s trademark. Nearby ports bring in about a third of all containers entering the country.',
     },
     comparison: [
-      'Los Angeles leads North America in movies, TV and streaming shows. Montreal leads French-language film, music and design. Montreal\u2019s audience is much smaller.',
-      'Many people speak two languages in both cities. Los Angeles sits in an English-speaking country. Montreal is mostly French-speaking, but French is a minority language across the whole continent.',
-      'Los Angeles is flat and spread out across a huge valley. Most people there drive. Montreal is packed more tightly together. It sits on an island and it has a train system people actually use.',
+      'Los Angeles leads North America in movies, TV and streaming shows. Montreal leads French-language film, music and design, but for a smaller audience.',
+      'Many people speak two languages in both cities. Montreal is mostly French-speaking, but French is a minority language.',
+      'Los Angeles is flat and spread out, so most people there drive. Montreal is packed more tightly on an island, with a train system people use.',
     ],
   },
   {
@@ -185,9 +185,9 @@ export const US_STOPS = [
         'Tourism drives the local economy, and towns like Flagstaff depend on it. Dams along the river make electricity, and about half the visitors come from other countries.',
     },
     comparison: [
-      'The Grand Canyon is a dry gorge cut by a river. The federal government runs it. Banff is icy mountain country. It was Canada\u2019s first national park, set aside in 1885.',
-      'Native nations with their own governments border the Grand Canyon. Banff is federal land inside Alberta. It is also a real town, with a mayor and a council that people elect.',
-      'Both are advertised around the world as wild land where nobody lives. But tens of thousands of people live and work in Banff all year. Only a few people live all year on the canyon floor.',
+      'The Grand Canyon is a dry gorge cut by a river, run by the government. Banff is icy mountain country, Canada\u2019s first national park, set aside in 1885.',
+      'Native nations with their own governments border the Grand Canyon. Banff is federal land inside Alberta, and also a real town with an elected mayor.',
+      'Both are advertised as wild land where nobody lives. Tens of thousands live in Banff all year. Only a few live on the canyon floor.',
     ],
   },
   {
@@ -216,9 +216,9 @@ export const US_STOPS = [
         'The port of South Louisiana handles more cargo than any other port in the Americas. Oil and gas are big here, and tourism employs many people.',
     },
     comparison: [
-      'Both began as French towns. Both still show that French past more than any other city in their country. New Orleans lost most of its French speakers in the 1900s. Quebec City stayed French-speaking.',
-      'New Orleans is a port on the Mississippi River. It is built on soft ground that keeps sinking. Quebec City sits high on a rock above the river. Walls around it still stand.',
-      'New Orleans is American and English-speaking, with strong Caribbean and African roots. Quebec City is Canadian and French-speaking. The Catholic Church shaped it, and its people work to keep French alive.',
+      'Both began as French towns and kept that past more than any other city. New Orleans lost most French speakers in the 1900s, but Quebec City stayed French-speaking.',
+      'New Orleans is a port on soft ground beside the Mississippi River. Quebec City sits high on a rock above the river, behind standing walls.',
+      'New Orleans is English-speaking with strong Caribbean and African roots. Quebec City is French-speaking and shaped by the Catholic Church.',
     ],
   },
 ]
