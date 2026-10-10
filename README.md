@@ -1,4 +1,4 @@
-# Intermaptic
+# Intermaptic: A School Project Built by Arnav Jugessur
 
 This is a 3D globe you can spin, zoom and tap. It compares the **United States** and **Canada**. For each place it looks at four things: geography, culture, government and economy. The globe has twenty-three landmarks. Each one has its own 3D model built from code.
 
