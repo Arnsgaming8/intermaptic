@@ -11,6 +11,7 @@ export default function Intro({ open, onDismiss }) {
       <div className="intro__inner">
         <p className="intro__kicker">Comparative atlas · North America</p>
         <h2 className="intro__title">INTERMAPTIC</h2>
+        <p className="intro__subtitle">Designed By Arnav Jugessur</p>
         <p className="intro__text">
           A holographic Earth that puts the United States and Canada side by side. Twenty-three
           landmarks are pinned to the globe. They include capitals, cultural hubs, business centres

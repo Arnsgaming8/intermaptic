@@ -1193,6 +1193,17 @@ button {
   text-shadow: 0 0 34px rgba(37, 216, 255, 0.6);
 }
 
+/* Credit line. Sits directly beneath the wordmark, in the mono face the rest of the
+   readout chrome uses, so it reads as part of the title block rather than as body copy. */
+.intro__subtitle {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--line);
+  margin: 0 0 20px;
+}
+
 .intro__text {
   font-size: 17px;
   line-height: 1.6;
