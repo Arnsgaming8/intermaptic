@@ -8,9 +8,15 @@ import { latLngToNormal, latLngToVector3, surfaceQuaternion } from '../lib/geo.j
 import { modelHeightFor } from '../models/index.js'
 import { codeOf } from '../data/locations.js'
 
-/** Approximate on-screen label box, used by the declutter pass. */
+/** Fallback label box, used only if a label has no layout box to measure yet. */
 const LABEL_HEIGHT = 26
-const LABEL_PAD = 4
+/**
+ * Breathing room between two name plates, in screen pixels. Four covers the few
+ * pixels of vertical offset the label's own CSS adds; the extra margin absorbs the
+ * small frame-to-frame wobble while the camera is still settling after load.
+ */
+const LABEL_PAD = 8
+
 
 /**
  * Holographic beacon layer.
@@ -20,6 +26,16 @@ const LABEL_PAD = 4
  * screen space and greedily claims space for the ones that matter - the focused or
  * hovered beacon always wins, then whichever beacons are nearest the camera - and
  * drops the rest, so the names never overlap.
+ *
+ * The pass measures each label's box rather than estimating it: guessing the width from
+ * the character count ran about 20px narrow and let two labels overlap, which put a
+ * name plate on top of a neighbour and made the wrong beacon the one you could tap.
+ * It also projects where the LABEL sits, not where the landmark stands - the name plate
+ * floats above the model by that stop's own height, so anchor-based boxes were wrong by
+ * tens of pixels.
+ *
+ * The readout chrome above the canvas does not swallow taps (see global.css), so a
+ * label tucked behind the top strip stays tappable at its own centre.
  *
  * NOTE ON <Html>: drei renders Html children into a separate React root, so R3F
  * hooks are NOT available inside them. The declutter loop therefore runs here, in the
@@ -70,16 +86,34 @@ function LabelDeclutter({ registry }) {
         continue
       }
 
-      projected.copy(entry.anchor).project(camera)
-      const x = (projected.x * 0.5 + 0.5) * size.width
-      const y = (-projected.y * 0.5 + 0.5) * size.height
+      // Project where the LABEL is, not where the landmark stands: the name plate
+      // floats above the model by each stop's own height, and comparing boxes at
+      // the anchor let labels overlap by tens of pixels.
+      projected.copy(entry.label || entry.anchor).project(camera)
+      const projectedX = (projected.x * 0.5 + 0.5) * size.width
+      const projectedY = (-projected.y * 0.5 + 0.5) * size.height
+
+      // The label is centred on the projected point by drei and nudged up a few
+      // pixels by its own CSS, which LABEL_PAD already covers. So the box is that
+      // point plus the label's measured size - not an estimate from the character
+      // count, which ran about 20px narrow and is exactly how two labels that the
+      // pass believed were clear ended up on top of each other.
+      //
+      // The size is read every frame rather than cached. offsetWidth is a layout
+      // metric and nothing in the frame loop dirties layout (drei writes transforms,
+      // which are compositor-only), so the read is cheap - and reading it live means
+      // the boxes are correct even while the webfonts are still swapping in and
+      // every label's width is changing under us.
+      const width = element.offsetWidth || entry.estWidth
+      const height = element.offsetHeight || LABEL_HEIGHT
 
       candidates.push({
         element,
-        x,
-        y,
+        x: projectedX,
+        y: projectedY,
         distance,
-        width: entry.estWidth,
+        width,
+        height,
         // Focused beacons outrank everything, then whichever is nearest the lens.
         rank: entry.active ? 2 : 1,
       })
@@ -88,11 +122,11 @@ function LabelDeclutter({ registry }) {
     candidates.sort((a, b) => b.rank - a.rank || a.distance - b.distance)
 
     for (const candidate of candidates) {
-      const { x, y, width } = candidate
+      const { x, y, width, height } = candidate
       const left = x - width / 2
       const right = x + width / 2
-      const top = y - LABEL_HEIGHT / 2
-      const bottom = y + LABEL_HEIGHT / 2
+      const top = y - height / 2
+      const bottom = y + height / 2
 
       const offscreen =
         x < -40 || x > size.width + 40 || y < -40 || y > size.height + 40
@@ -107,7 +141,7 @@ function LabelDeclutter({ registry }) {
 
       const shows = !offscreen && (candidate.rank === 2 || !collides)
       if (shows) {
-        claims.current.push({ left: x - width / 2, right: x + width / 2, top: y - LABEL_HEIGHT / 2, bottom: y + LABEL_HEIGHT / 2 })
+        claims.current.push({ left, right, top, bottom })
       }
       setVisible(candidate.element, shows)
     }
@@ -143,10 +177,21 @@ function Marker({ stop, register }) {
   const quaternion = useMemo(() => surfaceQuaternion(stop.lat, stop.lng), [stop.lat, stop.lng])
   const normal = useMemo(() => latLngToNormal(stop.lat, stop.lng), [stop.lat, stop.lng])
 
+  // How far above the surface this stop's name plate floats, in model units.
+  const labelLift = height + 0.26
+
   // Stable entry the declutter pass reads every frame.
   const entry = useMemo(
-    () => ({ element: null, anchor: surface, normal, active: false, estWidth: 96 }),
-    [surface, normal],
+    () => ({
+      element: null,
+      anchor: surface,
+      // Where the name plate actually floats, used for the on-screen collision box.
+      label: surface.clone().addScaledVector(normal, labelLift),
+      normal,
+      active: false,
+      estWidth: 96,
+    }),
+    [surface, normal, labelLift],
   )
 
   useEffect(() => {
@@ -164,7 +209,6 @@ function Marker({ stop, register }) {
 
   const stemBase = height + 0.02
   const stemTop = height + 0.20
-  const labelLift = height + 0.26
   const ringColour = isSelected ? PALETTE.amber : nation.base
 
   return (

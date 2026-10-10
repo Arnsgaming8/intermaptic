@@ -598,6 +598,18 @@ button {
   flex: 0 0 auto;
 }
 
+/*
+ * The readout chrome is information, not controls, so it lets taps pass through.
+ * Beacon labels are drawn under it, and without this a name plate that drifted
+ * behind the status strip could be seen but not tapped. The top bar's buttons are
+ * deliberately NOT in this list.
+ */
+.brand,
+.status-strip,
+.ticker {
+  pointer-events: none;
+}
+
 /* --------------------------------------------------------------------------
    Side panel (stop detail)
    -------------------------------------------------------------------------- */
