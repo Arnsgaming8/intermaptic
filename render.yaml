@@ -23,8 +23,8 @@ services:
       # simplest build that leaves a complete, reproducible tree.
       - key: NODE_VERSION
         value: '20.11.1'
-      # Set this to your GitHub Pages origin to lock the API down, for example
-      # https://arnsgaming8.github.io . Leave it unset to allow any origin, which
-      # is the default for this public read-only data.
-      - key: ALLOWED_ORIGINS
-        sync: false
+      # ALLOWED_ORIGINS is deliberately NOT listed here: it is optional, and listing
+      # it would make Render ask for a value during setup. Add it by hand in the
+      # dashboard when you want to lock the API to your own origin, for example
+      # https://arnsgaming8.github.io . Unset means any origin can call the API,
+      # which is the deliberate default for this public read-only data.
