@@ -246,6 +246,7 @@ All twenty-three landmarks sit inside one continent — Washington and New York 
 **Everything a reader sees about the two countries is written for a 6th grade reading level** (roughly age 11–12). That is the taglines, the quick facts, the four `sections` on every stop, the `comparison` bullets, the pair notes in `src/data/locations.js`, and the country-level rows in `NATIONAL_COMPARISON`. The rules are:
 
 - no sentence longer than **15 words**;
+- **two sentences per section** — a stop is a glance, not an article;
 - everyday words, with no jargon left unexplained;
 - no semicolons and no em dashes in reader-facing text.
 
@@ -255,7 +256,7 @@ It is enforced, not just intended:
 npm run check:reading
 ```
 
-That script walks every string in the data files, measures the sentences, and reports the average, the longest sentence and any offender by name. It currently reports 386 strings, 1245 sentences, an average of 8.6 words per sentence and a longest sentence of exactly 15 words. `npm run check:all` runs it together with the atlas and API checks, and the GitHub Pages workflow runs all three, so a hard-to-read sentence cannot reach the deployed site.
+That script walks every string in the data files, measures the sentences, and reports the average, the longest sentence and any offender by name. It currently reports 386 strings, 655 sentences, an average of 8.5 words per sentence and a longest sentence of exactly 15 words. It fails a section that runs to three sentences. `npm run check:all` runs it together with the atlas and API checks, and the GitHub Pages workflow runs all three, so a hard-to-read sentence cannot reach the deployed site.
 
 ### Adding a landmark model
 

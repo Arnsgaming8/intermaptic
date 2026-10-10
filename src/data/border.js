@@ -13,7 +13,7 @@ export const BORDER_SEGMENTS = [
   {
     id: 'west-49th',
     label: '49th parallel',
-    note: 'A straight line from the Pacific Ocean to Lake of the Woods. The two countries agreed on it in the Oregon Treaty of 1846.',
+    note: 'A straight line on the 49th parallel, set by the Oregon Treaty in 1846.',
     points: [
       { lat: 48.99, lng: -123.02 },
       { lat: 49.0, lng: -120.0 },
@@ -49,7 +49,7 @@ export const BORDER_SEGMENTS = [
   {
     id: 'east-45th',
     label: 'Eastern highlands',
-    note: 'After the St. Lawrence River, the line follows the 45th parallel. Then it follows rivers through northern New England.',
+    note: 'It follows the 45th parallel, then rivers through northern New England.',
     points: [
       { lat: 45.0, lng: -74.75 },
       { lat: 45.0, lng: -71.5 },
@@ -63,7 +63,7 @@ export const BORDER_SEGMENTS = [
   {
     id: 'alaska-yukon',
     label: 'Alaska–Yukon',
-    note: 'This part runs along the 141st meridian. The United States bought Alaska in 1867. That created a second border far to the north.',
+    note: 'It runs up the 141st meridian, added when the US bought Alaska in 1867.',
     points: [
       { lat: 60.3, lng: -141.0 },
       { lat: 64.0, lng: -141.0 },
@@ -82,7 +82,7 @@ export const BORDER_FACTS = [
   { label: 'Guarded by armies', value: 'No soldiers or walls on either side since 1872' },
   {
     label: 'Water crossings',
-    value: 'It crosses 4 of the 5 Great Lakes. It also crosses the St. Lawrence, Niagara and St. Clair rivers.',
+    value: 'It crosses 4 of the 5 Great Lakes and the St. Lawrence River.',
   },
   {
     label: 'Commission',

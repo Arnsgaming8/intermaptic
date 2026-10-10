@@ -58,7 +58,7 @@ export const PAIRS = [
     subject: 'Government',
     us: 'washington-dc',
     ca: 'ottawa',
-    note: 'Both capitals were built on purpose. Each one sits away from the biggest city so government and business would stay apart.',
+    note: 'Both capitals were built on purpose to keep government away from business.',
   },
   {
     id: 'finance',
@@ -66,7 +66,7 @@ export const PAIRS = [
     subject: 'Economy',
     us: 'new-york-city',
     ca: 'toronto',
-    note: 'Both are the banking centres of their country. Both are also the first stop for many new immigrants.',
+    note: 'Both are the banking centre of their country and a home for new immigrants.',
   },
   {
     id: 'pacific-tech',
@@ -74,7 +74,7 @@ export const PAIRS = [
     subject: 'Economy',
     us: 'san-francisco',
     ca: 'vancouver',
-    note: 'Two technology centres on the Pacific coast. Both grew from deep-water ports, big universities and immigrants from Asia.',
+    note: 'Two technology centres on the Pacific coast, both grown from ports and universities.',
   },
   {
     id: 'interior-economy',
@@ -82,7 +82,7 @@ export const PAIRS = [
     subject: 'Economy',
     us: 'chicago',
     ca: 'calgary',
-    note: 'Two inland cities that move goods and resources. One runs on trains and shipping. The other runs on energy.',
+    note: 'Two inland cities moving goods: one runs on trains, the other on energy.',
   },
   {
     id: 'culture',
@@ -90,7 +90,7 @@ export const PAIRS = [
     subject: 'Culture',
     us: 'los-angeles',
     ca: 'montreal',
-    note: 'Two places that sell their culture to the world. One speaks English and Spanish. The other speaks French.',
+    note: 'Both sell their culture worldwide, one in French and one in English and Spanish.',
   },
   {
     id: 'natural-wonders',
@@ -98,7 +98,7 @@ export const PAIRS = [
     subject: 'Geography',
     us: 'grand-canyon',
     ca: 'banff',
-    note: 'The most famous landform in each country. One is a desert canyon cut by a river. The other is icy mountains in the Rockies.',
+    note: 'The most famous landform in each country: a river canyon and icy peaks.',
   },
   {
     id: 'heritage',
@@ -106,7 +106,7 @@ export const PAIRS = [
     subject: 'Culture',
     us: 'new-orleans',
     ca: 'quebec-city',
-    note: 'The best-kept old European quarters in North America. One is French and Caribbean. The other is French and Catholic.',
+    note: 'Two of the oldest quarters in North America, both with French roots.',
   },
   {
     id: 'border-link',
@@ -114,7 +114,7 @@ export const PAIRS = [
     subject: 'Geography',
     us: 'niagara-falls',
     ca: 'niagara-falls',
-    note: 'The longest border in the world with no soldiers on it. Both countries advertise this one waterfall as their own.',
+    note: 'The longest border in the world, with one waterfall both countries claim.',
   },
   {
     id: 'carved-rock',
@@ -122,7 +122,7 @@ export const PAIRS = [
     subject: 'Geography',
     us: 'mount-rushmore',
     ca: 'gros-morne',
-    note: 'Two places where very old rock sits out in the open. One was carved by people. The other was pushed up by the Earth itself.',
+    note: 'Two rock faces from deep time, one carved and one pushed up.',
   },
   {
     id: 'looking-up',
@@ -130,7 +130,7 @@ export const PAIRS = [
     subject: 'Science',
     us: 'kennedy-space-center',
     ca: 'churchill',
-    note: 'Both are small places that look at big things. One sends rockets into space. The other studies bears and the northern lights.',
+    note: 'Both are small places that look at big things: rockets and the northern sky.',
   },
   {
     id: 'northern-edge',
@@ -138,7 +138,7 @@ export const PAIRS = [
     subject: 'Geography',
     us: 'denali',
     ca: 'iqaluit',
-    note: 'Both sit far north where few people live. One is a huge mountain. The other is a town that runs its own territory.',
+    note: 'Both sit far north where few people live: a mountain and a small town.',
   },
   {
     id: 'rivers-and-tides',
@@ -146,7 +146,7 @@ export const PAIRS = [
     subject: 'Geography',
     us: 'hoover-dam',
     ca: 'bay-of-fundy',
-    note: 'One place holds a river back with a giant wall. The other lets the ocean rise and fall higher than anywhere else on Earth.',
+    note: 'One holds a river back, the other has the highest tides on Earth.',
   },
 ]
 
@@ -186,19 +186,19 @@ export const NATIONAL_COMPARISON = {
       { label: 'Land area', value: '9.15 million km²' },
       { label: 'GDP (nominal)', value: '~$29.2 trillion' },
       { label: 'GDP per capita', value: '~$86,600' },
-      { label: 'Government', value: 'A federal republic. Voters elect a president to lead the country.' },
+      { label: 'Government', value: 'A federal republic where voters elect a president.' },
       { label: 'Head of state', value: 'A president the people elect' },
-      { label: 'Legislature', value: 'Congress. It has 100 senators and 435 representatives.' },
-      { label: 'Official languages', value: 'There is no official language. English is the one most people use.' },
+      { label: 'Legislature', value: 'Congress, with 100 senators and 435 representatives.' },
+      { label: 'Official languages', value: 'No official language, though most people use English.' },
       { label: 'Currency', value: 'The US dollar (USD)' },
-      { label: 'Highest point', value: 'Denali in Alaska. It is 6,190 m tall.' },
+      { label: 'Highest point', value: 'Denali in Alaska, at 6,190 m.' },
       {
         label: 'Time zones',
-        value: 'The 48 states in the main part of the country have 4. Alaska adds a 5th and Hawaii a 6th. With territories there are 9.',
+        value: 'Four in the main states, and 9 including Alaska, Hawaii and territories.',
       },
       {
         label: 'Health system',
-        value: 'Most people get insurance through a job or buy it themselves. Some get help from government programmes.',
+        value: 'Most people get insurance from a job or buy it themselves.',
       },
     ],
   },
@@ -213,23 +213,23 @@ export const NATIONAL_COMPARISON = {
       { label: 'GDP per capita', value: '~$53,400' },
       {
         label: 'Government',
-        value: 'A parliamentary system. A king or queen is the head of state. An elected leader runs the government.',
+        value: 'A parliamentary system with a king or queen as head of state.',
       },
       {
         label: 'Head of state',
-        value: 'King Charles III. A Governor General speaks for the king in Canada.',
+        value: 'King Charles III, represented in Canada by a Governor General.',
       },
       {
         label: 'Legislature',
-        value: 'Parliament. It has an elected House of Commons. Its Senate is chosen by the government rather than elected.',
+        value: 'Parliament, with an elected House of Commons and a Senate chosen by government.',
       },
       { label: 'Official languages', value: 'English and French are both official.' },
       { label: 'Currency', value: 'The Canadian dollar (CAD)' },
-      { label: 'Highest point', value: 'Mount Logan in Yukon. It is 5,959 m tall.' },
+      { label: 'Highest point', value: 'Mount Logan in Yukon, at 5,959 m.' },
       { label: 'Time zones', value: '6' },
       {
         label: 'Health system',
-        value: 'Health care is paid for by taxes. Everyone in Canada can use it.',
+        value: 'Health care is paid for by taxes and open to everyone.',
       },
     ],
   },
@@ -237,23 +237,23 @@ export const NATIONAL_COMPARISON = {
   shared: [
     {
       label: 'Border length',
-      value: 'The line is 8,891 km long. That is the longest border between two countries anywhere.',
+      value: 'At 8,891 km, the longest border between two countries anywhere.',
     },
     {
       label: 'Border since',
-      value: 'The line goes back to the Treaty of Paris in 1783. The 49th parallel was set by the Oregon Treaty in 1846.',
+      value: 'Set by the Treaty of Paris in 1783 and the Oregon Treaty in 1846.',
     },
     {
       label: 'Trade',
-      value: 'The two countries buy and sell more than $2.5 billion of goods and services. They do this every day.',
+      value: 'More than $2.5 billion of goods and services cross the border every day.',
     },
     {
       label: 'Agreements',
-      value: 'They signed USMCA in 2020 and NORAD in 1958. They also share the Great Lakes Water Quality Agreement.',
+      value: 'USMCA in 2020, NORAD in 1958 and a shared water quality agreement.',
     },
     {
       label: 'Largest shared water body',
-      value: 'The fresh water on the surface of the Earth includes the Great Lakes. They hold about 21% of it.',
+      value: 'The Great Lakes hold about 21% of the fresh surface water on Earth.',
     },
   ],
 }

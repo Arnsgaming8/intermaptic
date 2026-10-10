@@ -22,13 +22,13 @@ export const US_EXTRA_STOPS = [
     ],
     sections: {
       geography:
-        'Mount Rushmore sits in the Black Hills of South Dakota. This small mountain range rises out of the flat plains around it. The faces are carved into hard granite over a billion years old. The hills are cooler and wetter than the land nearby. Pine forests grow on the slopes. Wind and rain slowly wear the stone down. Park crews check the faces for cracks.',
+        'Mount Rushmore sits in the Black Hills of South Dakota. The faces are carved into hard granite over a billion years old.',
       culture:
-        'The Black Hills are sacred to the Lakota people and other Native nations. A treaty in 1868 promised them the land. The United States took it after gold was found. The sculptor Gutzon Borglum began the work in 1927. He wanted to bring visitors to South Dakota. His son finished the carving in 1941. Today the memorial is also a place of argument. People disagree about who should decide what happens to the mountain.',
+        'The Black Hills are sacred to the Lakota people. A 1868 treaty was broken, and Borglum carved the faces from 1927 to 1941.',
       government:
-        'The memorial is run by the National Park Service. The land belongs to the federal government, not to South Dakota. The land around it has a tangled history. Courts have ruled that the 1868 treaty was broken. Some Lakota leaders have refused payment for the land for that reason.',
+        'The memorial is run by the National Park Service. The land belongs to the federal government, not to South Dakota.',
       economy:
-        'Tourism is the main business in the Black Hills. About two million people visit the memorial each year. Hotels, campgrounds and shops in nearby towns depend on them. Mining and ranching still matter in the wider region. They employ far fewer people than visitors do.',
+        'Tourism is the main business in the Black Hills. About two million people visit the memorial each year.',
     },
     comparison: [
       'Mount Rushmore is famous for what people carved into it. Gros Morne is famous for rock the Earth pushed up. Both show off stone that is over a billion years old.',
@@ -53,13 +53,13 @@ export const US_EXTRA_STOPS = [
     ],
     sections: {
       geography:
-        'The space center sits on Merritt Island on the Florida coast. It faces the Atlantic Ocean. Rockets launch east over the ocean. That way, falling pieces land in the sea and not on towns. The site is surrounded by a national wildlife refuge with mangroves and lagoons. Being near the equator also helps. The Earth spins faster here, so rockets get a boost.',
+        'The space center sits on Merritt Island on the Florida coast. Rockets launch east over the Atlantic Ocean, away from towns.',
       culture:
-        'The space center is the place Americans picture when they think about spaceflight. Apollo 11 left for the Moon from here in 1969. Crowds watched from the beaches. Museums on the site display a Saturn V rocket and a space shuttle. Many workers there are engineers and scientists. The area around it has grown into a technology region.',
+        'Apollo 11 left for the Moon from here in 1969. Museums on the site display a Saturn V rocket and a space shuttle.',
       government:
-        'The center belongs to NASA, which is a federal agency. Congress decides how much money NASA gets each year. That budget rises and falls with politics. Programs can be started and then cancelled. The site also works with private companies. Some of them now launch from the same pads.',
+        'The center belongs to NASA, which is a federal agency. Congress decides how much money NASA gets each year.',
       economy:
-        'Space launches bring jobs and tourists to the Florida coast. The Vehicle Assembly Building is one of the biggest buildings in the world. Private companies such as SpaceX now launch from the same site. Space is not the only business here. The region also runs on tourism and farming.',
+        'Space launches bring jobs and tourists to the Florida coast. Private companies such as SpaceX now launch from the same site.',
     },
     comparison: [
       'Kennedy Space Center launches rockets into space. Churchill, Manitoba once had a rocket range of its own. Both are small places that study very big things.',
@@ -84,13 +84,13 @@ export const US_EXTRA_STOPS = [
     ],
     sections: {
       geography:
-        'Denali is the highest mountain in North America, at about 6,190 metres. It rises out of low hills. It is one of the biggest climbs on land from base to top. The park around it is bigger than some countries. It holds glaciers, rivers and open treeless ground. Winter temperatures near the summit can drop to minus sixty degrees Celsius.',
+        'Denali is the highest mountain in North America, at about 6,190 metres. Winter temperatures near the summit can drop to minus sixty degrees Celsius.',
       culture:
-        'Native Athabaskan people have lived here for thousands of years. They call the mountain Denali, and the name means the high one. Climbers came much later. The first team reached the top in 1913. The mountain was officially named Mount McKinley for most of the last century. In 2015 the federal government changed the name back to Denali.',
+        'Native Athabaskan people have lived here for thousands of years. They call the mountain Denali, which means the high one.',
       government:
-        'Denali sits inside a national park that the federal government owns and runs. The park was created in 1917. Alaska is a state. Most of the land around the mountain is federal, not state land. Native corporations also own and manage large areas under a 1971 settlement law.',
+        'The park was created in 1917 and the federal government runs it. Under a 1971 law, Native corporations also own large areas here.',
       economy:
-        'Almost all the money in the area comes from visitors. Buses carry tourists into the park on one road. Most visitors never leave it. Flightseeing planes fly climbers onto the glaciers. There is little farming or industry this far north. The towns near the park live on the summer season.',
+        'Almost all the money in the area comes from visitors. Buses carry tourists into the park on one road.',
     },
     comparison: [
       'Denali is a mountain with no towns and no road to the top. Iqaluit is a small Arctic capital where people live all year. Both sit far north, where very few people live.',
@@ -115,13 +115,13 @@ export const US_EXTRA_STOPS = [
     ],
     sections: {
       geography:
-        'Hoover Dam stands in Black Canyon on the Colorado River, between Nevada and Arizona. It holds back the river to form Lake Mead. That is the largest reservoir in the United States. The land around it is a dry desert. It gets very little rain. The dam also controls floods, which used to sweep through the canyon every spring.',
+        'Hoover Dam stands in Black Canyon, between Nevada and Arizona. It holds back the Colorado River to form Lake Mead, the largest US reservoir.',
       culture:
-        'Thousands of workers built the dam during the Great Depression. Jobs were hard to find then. Many of them lived in a temporary town called Boulder City. The dam was finished ahead of schedule in 1936. It is named after President Herbert Hoover. He was in office when the project was planned.',
+        'Thousands of workers built the dam during the Great Depression. It was finished in 1936 and named after President Herbert Hoover.',
       government:
-        'The dam belongs to the federal government. The Bureau of Reclamation runs it. Seven states share the water of the Colorado River. A 1922 agreement called the Colorado River Compact sets out the rules. The federal government also divides the electricity among Nevada, Arizona and California. The river is shared. No single state can decide how much water it gets.',
+        'The dam belongs to the federal government, and the Bureau of Reclamation runs it. A 1922 agreement sets out how seven states share the river water.',
       economy:
-        'The dam makes about 2,000 megawatts of electricity with seventeen turbines. That power goes to homes and businesses in three states. Lake Mead supplies water to farms and cities, including Las Vegas and Los Angeles. The dam is also a big tourist stop. It is lit up at night.',
+        'The dam makes about 2,000 megawatts of electricity with seventeen turbines. That power and water serve farms and cities in three states.',
     },
     comparison: [
       'Hoover Dam holds a river back with a wall made by people. The Bay of Fundy has the biggest tides in the world. Nobody built that one. The Moon did.',

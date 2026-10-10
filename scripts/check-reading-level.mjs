@@ -2,7 +2,9 @@
  * Reading-level check.
  *
  * Every word a reader sees about the United States and Canada must be readable by a
- * 6th grader: short sentences, everyday words, no semicolons, no em dashes.
+ * 6th grader: short sentences, everyday words, no semicolons, no em dashes. The panels
+ * are also meant to stay short - a stop shows a brief reading, not an article - so the
+ * four sections of a stop are held to two sentences each.
  *
  * Run with:  node scripts/check-reading-level.mjs
  *
@@ -17,6 +19,9 @@ const ROOT = resolve(HERE, '..')
 const url = (relative) => pathToFileURL(resolve(ROOT, relative)).href
 
 const MAX_WORDS = 15
+
+/** A stop's four sections are a glance, not an article. */
+const MAX_SECTION_SENTENCES = 2
 
 /** Words a 12-year-old would not meet in everyday reading. */
 const HARD_WORDS = [
@@ -90,6 +95,12 @@ function inspect({ where, text }) {
     }
   })
 
+  // Only the four sections per stop carry this limit: facts are fragments, and a
+  // comparison bullet is allowed to make more than one point.
+  if (where.includes('.sections.') && sentences.length > MAX_SECTION_SENTENCES) {
+    problems.push(`${sentences.length} sentences, but a section takes ${MAX_SECTION_SENTENCES}`)
+  }
+
   const lower = text.toLowerCase()
   HARD_WORDS.forEach((word) => {
     if (new RegExp(`\\b${word}\\b`).test(lower)) problems.push(`hard word "${word}"`)
@@ -127,6 +138,7 @@ console.log(`sentences:            ${sentenceCount}`)
 console.log(`average words/sent:   ${(wordCount / sentenceCount).toFixed(1)}`)
 console.log(`longest sentence:     ${longest.words} words  (${longest.where})`)
 console.log(`stops / pairs:        ${STOPS.length} / ${PAIRS.length}`)
+console.log(`sections per stop:    ${MAX_SECTION_SENTENCES} sentences max`)
 console.log('')
 
 if (failures.length) {
