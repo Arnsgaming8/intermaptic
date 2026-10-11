@@ -237,13 +237,13 @@ All twenty-three landmarks sit inside one continent. Washington and New York are
 
 ### Adding a stop
 
-1. Add an entry to `src/data/us.js`, `ca.js`, `us-extra.js`, `ca-extra.js` or `shared.js`. The exact schema is written at the top of `src/data/shared.js`, with a worked example. A stop needs `id`, `name`, `country`, `kind`, `lat`, `lng`, `model`, `tagline` and `pair`. It also needs three `facts`, the four `sections`, and two or more `comparison` bullets.
+1. Add an entry to `src/data/us.js`, `ca.js`, `us-extra.js`, `ca-extra.js` or `shared.js`. The exact schema is written at the top of `src/data/shared.js`, with a worked example. A stop needs `id`, `name`, `country`, `kind`, `lat`, `lng`, `model`, `tagline` and `pair`. It also needs three `facts`, the four `sections`, two or more `comparison` bullets and two or three `sources` - the bodies the figures come from, printed between the reading and the comparison.
 2. Point `model` at a key in `src/models/index.js`, and add the matching React component.
 3. Run `node scripts/check-atlas.mjs`. It fails loudly if a section is missing or a coordinate is bad. It also fails on a model id that is not registered. It fails too when a registered model has no stop.
 
 ### Reading level
 
-**Everything a reader sees about the two countries is written for a 6th grade level.** That is about age 11 to 12. That means the taglines and the quick facts. It also means the four `sections` on every stop and the `comparison` bullets. The pair notes in `src/data/locations.js` and the country-level rows in `NATIONAL_COMPARISON` count too. The reading panel sets each stop out as four separate sections, one per subject. The rules are:
+**Everything a reader sees about the two countries is written for a 6th grade level.** That is about age 11 to 12. That means the taglines and the quick facts. It also means the four `sections` on every stop, the `comparison` bullets and the `sources` lines. The pair notes in `src/data/locations.js` and the country-level rows in `NATIONAL_COMPARISON` count too. The reading panel sets each stop out as four separate sections, one per subject. The rules are:
 
 - no sentence longer than **15 words**.
 - **eight sentences per section**, which is enough to explain the place.
@@ -256,7 +256,7 @@ It is checked, not just meant:
 npm run check:reading
 ```
 
-That script walks every string in the data files and measures each sentence. It reports the average, the longest sentence, and any string that breaks a rule. Today it reports 386 strings and 1101 sentences. The average sentence is 9.6 words, and the longest is exactly 15 words. It fails a section that is not exactly eight sentences long. `npm run check:all` runs it with the atlas and API checks. The GitHub Pages workflow runs all three. So a hard-to-read sentence cannot reach the deployed site.
+That script walks every string in the data files and measures each sentence. It reports the average, the longest sentence, and any string that breaks a rule. Today it reports 436 strings and 1154 sentences. The average sentence is 9.4 words, and the longest is exactly 15 words. It fails a section that is not exactly eight sentences long. `npm run check:all` runs it with the atlas and API checks. The GitHub Pages workflow runs all three. So a hard-to-read sentence cannot reach the deployed site.
 
 ### Adding a landmark model
 

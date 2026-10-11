@@ -35,6 +35,7 @@ export function measureReadingLevel() {
     })
     Object.values(stop.sections).forEach(push)
     stop.comparison.forEach(push)
+    ;(stop.sources || []).forEach(push)
   })
   PAIRS.forEach((pair) => {
     push(pair.label)
@@ -99,6 +100,7 @@ export function shapeStop(stop, { depth = 'full' } = {}) {
     ...base,
     facts: stop.facts,
     sections: stop.sections,
+    sources: stop.sources || [],
     comparison: stop.comparison,
     pairDetail: getPair(stop.pair)
       ? {

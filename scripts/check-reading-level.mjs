@@ -53,6 +53,8 @@ STOPS.forEach((stop) => {
   })
   Object.entries(stop.sections).forEach(([key, text]) => push(`${at}.sections.${key}`, text))
   stop.comparison.forEach((bullet, i) => push(`${at}.comparison[${i}]`, bullet))
+  // Sources are shown to the reader, so they face the same word rules as the prose.
+  stop.sources.forEach((source, i) => push(`${at}.sources[${i}]`, source))
 })
 
 PAIRS.forEach((pair) => {

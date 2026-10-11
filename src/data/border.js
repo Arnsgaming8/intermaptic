@@ -75,7 +75,12 @@ export const BORDER_SEGMENTS = [
 /** Flattened waypoints, handy for the overview ticker. */
 export const BORDER_WAYPOINTS = BORDER_SEGMENTS.flatMap((segment) => segment.points)
 
-/** Headline facts about the boundary itself, shown in the border panel. */
+/**
+ * Headline facts about the boundary itself, shown in the border panel.
+ *
+ * The line has not moved since 1925, but what crosses it has changed: the two countries
+ * entered a tariff fight in 2025, so the trade entries below carry the 2026 position.
+ */
 export const BORDER_FACTS = [
   { label: 'Total length', value: '8,891 km long, counting Alaska' },
   { label: 'Rank', value: 'The longest border in the world between two countries' },
@@ -87,5 +92,9 @@ export const BORDER_FACTS = [
   {
     label: 'Commission',
     value: 'A joint group called the International Boundary Commission has measured the line since 1925.',
+  },
+  {
+    label: 'Tariff fight',
+    value: 'The United States taxes most Canadian goods at 25 per cent. Canada answered with its own tariffs in September 2026.',
   },
 ]

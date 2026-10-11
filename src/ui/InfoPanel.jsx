@@ -69,6 +69,17 @@ export default function InfoPanel() {
           </article>
         ))}
 
+        {selectedStop.sources?.length ? (
+          <section className="sources-block">
+            <h3 className="sources-block__title">Sources</h3>
+            <ul className="sources-list">
+              {selectedStop.sources.map((source) => (
+                <li key={source}>{source}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
         <section className="compare-block">
           <div className="compare-block__head">
             <span className="compare-block__versus">Comparison</span>

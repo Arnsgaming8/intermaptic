@@ -409,6 +409,17 @@ button {
   left: 20px;
   top: 96px;
   width: 234px;
+  /*
+    The three blocks stack from the top and together they are taller than a short
+    screen - a 768px laptop or a landscape iPad. Without a ceiling the last block runs
+    under the fold, and `.app-shell { overflow: hidden }` then puts the layer switches
+    out of reach for good. Capping the rail so it stops above the ticker lets it scroll
+    instead: the ceiling is only ever reached when the blocks genuinely do not fit.
+  */
+  max-height: calc(100% - 160px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -769,6 +780,49 @@ button {
 }
 
 /* Comparison block */
+/*
+ * Where a stop's figures come from. It closes the reading and sits directly above the
+ * comparison, so a number can be checked without leaving the panel.
+ */
+.sources-block {
+  padding: 14px var(--panel-pad) 16px;
+  border-top: 1px solid var(--line-faint);
+}
+
+.sources-block__title {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.sources-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sources-list li {
+  position: relative;
+  padding-left: 12px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  color: var(--line);
+}
+
+.sources-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--text-dim);
+}
+
 .compare-block {
   padding: 16px var(--panel-pad) 18px;
   background: linear-gradient(to bottom, rgba(37, 216, 255, 0.07), transparent);
@@ -843,6 +897,14 @@ button {
   position: absolute;
   inset: 0;
   display: grid;
+  /*
+    `place-items: center` alone leaves the row at the panel's content height, so a long
+    directory grew past the shell on a short screen and its own `max-height: 100%`
+    resolved against that oversized row - no cap, no scroll, and the tail of the list
+    hung below the fold. Pinning the row to the viewport gives the panel a real ceiling
+    to measure against, and the body inside it scrolls.
+  */
+  grid-template-rows: minmax(0, 1fr);
   place-items: center;
   padding: 84px 20px 84px;
   background: rgba(2, 6, 15, 0.62);
@@ -865,9 +927,14 @@ button {
   max-height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .overlay__body {
+  /* min-height: 0 is what lets the body shrink to the panel and hand the overflow to
+     its own scrollbar instead of stretching the panel past the screen. */
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
   padding: var(--panel-pad);
 }
@@ -1167,11 +1234,24 @@ button {
   z-index: 50;
   animation: fade-in 320ms ease;
   padding: 24px;
+  /*
+    Fits any iPad squarely, but a Split View pane or an on-screen keyboard can take the
+    height under the splash and turn a full-screen dialog into a clipped one, with the
+    Enter button below the fold. Scrolling it costs nothing when it already fits.
+  */
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .intro__inner {
   max-width: 660px;
   text-align: center;
+  /*
+    Auto margins, not just `place-items: center`: when the splash is taller than the
+    pane the free space is negative and auto margins fall to zero, so the title starts at
+    the top and scrolls into view instead of being centred off the top edge.
+  */
+  margin: auto;
 }
 
 .intro__kicker {
@@ -1615,29 +1695,73 @@ button {
   }
 }
 
-/* iPad in either orientation, including Split View where the pane gets narrow. */
+/*
+ * iPad in either orientation, including Split View where the pane gets narrow.
+ *
+ * The tablet shows the desktop HUD - rail down the left, readout in the top bar, the stop
+ * panel on the right - just sized to the screen. Portrait lands inside the 900px phone
+ * breakpoint, so the phone treatment is undone explicitly rather than left to fall
+ * through: without that the rail kept the phone's bottom row, was stretched from
+ * `top: 88px` to `bottom: 64px`, and its blocks, built for a row, stood over 1000px tall.
+ *
+ * The rail also takes a ceiling here. Its three blocks total 788px and the shortest iPad
+ * is 834px in landscape, so without the cap the layer switches run out of the shell, where
+ * `overflow: hidden` makes them unreachable. Scrolling the rail costs nothing when the
+ * blocks do fit, which they do at every portrait size.
+ */
 @media (min-width: 700px) and (max-width: 1400px) and (pointer: coarse), (min-width: 700px) and (max-width: 1400px) and (any-pointer: coarse) {
   :root {
     --panel-pad: 16px;
   }
 
-  .left-rail {
-    top: 88px;
-    width: 214px;
+  /* The readout is information, not chrome to drop: it keeps its place in the bar beside
+     the brand and the two buttons. Tighter than the desktop strip so the three still
+     share one row at 768px. */
+  .status-strip {
+    display: flex;
     gap: 10px;
+    padding: 7px 10px;
+  }
+
+  .status-strip .label,
+  .status-item__value {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+
+  .left-rail {
+    left: 20px;
+    right: auto;
+    top: 88px;
+    bottom: auto;
+    width: 214px;
+    flex-direction: column;
+    overflow-x: visible;
+    gap: 10px;
+    padding-bottom: 0;
+    max-height: calc(100% - 152px);
   }
 
   .side-panel {
     top: 88px;
+    left: auto;
     right: 12px;
     bottom: 70px;
     width: 380px;
+    max-height: none;
+    animation: slide-in 220ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .ticker {
     left: 12px;
     right: 12px;
     bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* The beacon count belongs to the readout, and the ticker text ellipsises around it
+     exactly as it does on the desktop. */
+  .ticker__hint {
+    display: inline;
   }
 
   /* The globe stays the hero: panels shrink before the 3D view does. */
