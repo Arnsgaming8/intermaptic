@@ -62,23 +62,39 @@ export default function CameraRig() {
     setFlying(true)
   }, [selectedStop, camera, size.width])
 
+  // The controls update first (drei registers their frame callback at a negative
+  // priority), so this runs after them and owns the last word on where the camera is.
   useFrame((_, delta) => {
     const state = flight.current
-    if (!state) return
 
-    state.elapsed += delta
-    const t = Math.min(state.elapsed / FLIGHT_SECONDS, 1)
-    const eased = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+    if (state) {
+      state.elapsed += delta
+      const t = Math.min(state.elapsed / FLIGHT_SECONDS, 1)
+      const eased = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
 
-    camera.position.lerpVectors(state.cameraFrom, state.cameraTo, eased)
-    if (controlsRef.current) {
-      controlsRef.current.target.lerpVectors(state.targetFrom, state.targetTo, eased)
-      controlsRef.current.update()
+      camera.position.lerpVectors(state.cameraFrom, state.cameraTo, eased)
+      if (controlsRef.current) {
+        controlsRef.current.target.lerpVectors(state.targetFrom, state.targetTo, eased)
+        controlsRef.current.update()
+      }
+
+      if (t >= 1) {
+        flight.current = null
+        setFlying(false)
+      }
     }
 
-    if (t >= 1) {
-      flight.current = null
-      setFlying(false)
+    /*
+     * Hold the camera above the ground.
+     *
+     * `minDistance` cannot do this job: OrbitControls measures it from the look-at
+     * target, and that target stands on the surface whenever a stop is focused - so
+     * with a reading open the camera already sat at the limit and the zoom could not
+     * move in at all. Distance from the globe's centre is the same floor in every
+     * state, and it also keeps a long fly-to from cutting through the shell.
+     */
+    if (camera.position.length() < GLOBE_TUNING.minZoomDistance) {
+      camera.position.setLength(GLOBE_TUNING.minZoomDistance)
     }
   })
 
@@ -92,7 +108,10 @@ export default function CameraRig() {
       dampingFactor={0.08}
       rotateSpeed={0.55}
       zoomSpeed={0.8}
-      minDistance={GLOBE_TUNING.minZoomDistance}
+      /* The surface floor lives in the frame loop above, not here: the target is on
+         the ground when a stop is focused, so a target-relative minimum is no floor
+         at all once a reading is open. */
+      minDistance={0}
       maxDistance={GLOBE_TUNING.maxZoomDistance}
       autoRotate={autoRotate && !selectedStop}
       autoRotateSpeed={0.42}

@@ -107,13 +107,18 @@ export const GLOBE_TUNING = {
   /**
    * Zoom range: from the surface of the globe out to the whole planet in frame.
    *
-   * `minZoomDistance` used to stop the camera a good way above the ground, so the
-   * closest you could ever get to a stop was a distant look. It is now the globe's
-   * own `radius` plus the camera's near plane (0.1, set in Scene.jsx), which is as
-   * close as the eye can go while the shell underfoot still renders: the camera
-   * ends up 0.1 world units above the surface, with the ground filling the view.
-   * Going right down to bare `radius` would put the near plane through the shell
-   * and leave a hole in the foreground.
+   * `minZoomDistance` is how close the eye may come to the planet: the globe's own
+   * `radius` plus the camera's near plane (0.1, set in Scene.jsx), which is as close
+   * as the camera can sit while the shell underfoot still renders. Going right down
+   * to bare `radius` would put the near plane through the shell and leave a hole in
+   * the foreground.
+   *
+   * It is measured from the globe's CENTRE, not from the camera's look-at target.
+   * OrbitControls would measure it from the target, and the target stands on the
+   * surface whenever a stop is focused - which dead-ended the zoom the moment a
+   * reading was open, because the camera already parked at that limit. CameraRig
+   * holds the camera to this altitude instead, so the zoom runs down to the ground
+   * in both states.
    */
   minZoomDistance: 2.5,
   maxZoomDistance: 12,
