@@ -56,6 +56,80 @@ button {
 }
 
 /* --------------------------------------------------------------------------
+   Scrollbars
+   Every surface that scrolls in the HUD - the reading, the directory, the rail,
+   the splash - wears the same bar: a hollow track and a squared-off thumb cut
+   from the cyan the panels are drawn with, so it reads as part of the console
+   rather than a browser default.
+   -------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(2, 6, 15, 0.55);
+}
+
+/* A hairline on the edge the thumb runs against, so the bar reads as a channel cut
+   into the panel. It turns with the bar: sideways for a column, along the top for
+   the rail's row on a phone. */
+::-webkit-scrollbar-track:vertical {
+  border-left: 1px solid var(--line-faint);
+}
+
+::-webkit-scrollbar-track:horizontal {
+  border-top: 1px solid var(--line-faint);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgba(37, 216, 255, 0.5),
+    rgba(37, 216, 255, 0.18)
+  );
+  border: 1px solid var(--line-soft);
+  box-shadow: inset 0 0 6px rgba(37, 216, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(to right, rgba(37, 216, 255, 0.5), rgba(37, 216, 255, 0.18));
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(to bottom, var(--line), rgba(37, 216, 255, 0.45));
+  border-color: var(--line);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Arrow buttons belong to a desktop widget, not to this console. */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* The rail is a narrow column, so its bar is narrower than the panels'. */
+.left-rail::-webkit-scrollbar {
+  width: 8px;
+}
+
+/*
+ * Firefox has no ::-webkit- pseudo-elements and takes the standard pair instead. The
+ * @supports guard keeps it away from Chromium: where both are set, Chromium honours
+ * scrollbar-color and drops the themed bar above, so the two must not meet.
+ */
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(37, 216, 255, 0.45) rgba(2, 6, 15, 0.55);
+  }
+}
+
+/* --------------------------------------------------------------------------
    Shell
    -------------------------------------------------------------------------- */
 
@@ -419,7 +493,6 @@ button {
   max-height: calc(100% - 160px);
   overflow-y: auto;
   overscroll-behavior: contain;
-  scrollbar-width: thin;
   display: flex;
   flex-direction: column;
   gap: 12px;
