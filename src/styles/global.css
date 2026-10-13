@@ -14,6 +14,10 @@
   --text: #d8f4ff;
   --text-dim: #7fa8c4;
   --amber: #ffb545;
+  /* The focused beacon's own colour. Amber already means the shared US-Canada
+     border everywhere else, so a selection drawn in it read as one more border
+     pip; the palette's spare green says "this one" and nothing else. */
+  --green: #4dffb8;
   --us: #3f8bff;
   --ca: #ff4d5e;
   --shared: #ffb545;
@@ -1287,11 +1291,11 @@ button {
 }
 
 .marker-label.is-selected {
-  border-color: var(--amber);
+  border-color: var(--green);
 }
 
 .marker-label.is-selected .marker-label__code {
-  color: var(--amber);
+  color: var(--green);
 }
 
 /* --------------------------------------------------------------------------

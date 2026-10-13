@@ -245,7 +245,9 @@ function Marker({ stop, register }) {
 
   const stemBase = height + 0.02
   const stemTop = height + 0.20
-  const ringColour = isSelected ? PALETTE.amber : nation.base
+  // The focused stop takes the palette's green: amber is the shared-border tint here,
+  // so a beacon lit amber read as one more border pip rather than as the chosen one.
+  const ringColour = isSelected ? PALETTE.green : nation.base
 
   return (
     <group position={surface} quaternion={quaternion}>
