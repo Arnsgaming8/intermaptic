@@ -1755,9 +1755,27 @@ button {
     min-height: 44px;
   }
 
-  /* A finger needs a wider hit area than a cursor to grab a beacon. */
+  /*
+   * A finger needs a target, not a cursor's hit area. Extra padding alone left a plate
+   * 33px tall - short of the 44px every other control takes on a tablet, and a plate is
+   * a control: tapping one opens a reading. Width was never the problem; the plates run
+   * 120-270px wide. The taller box only costs a plate its place when two would overlap,
+   * and the declutter pass measures each one's real box before it decides.
+   */
   .marker-label {
     padding: 8px 12px;
+    min-height: 44px;
+  }
+
+  /*
+   * Held down. A tablet has no hover, so the press is what says the tap landed - the
+   * same thing the desktop's hover says. It repeats the base translateY(-4px): without
+   * that the plate would jump 4px under the thumb as it activates.
+   */
+  .marker-label.is-pressed {
+    background: rgba(6, 26, 46, 0.94);
+    box-shadow: 0 0 18px var(--marker-tint, var(--line));
+    transform: translateY(-4px) scale(0.97);
   }
 
   /* Backdrop blur is one of the most expensive effects on a tablet GPU. */

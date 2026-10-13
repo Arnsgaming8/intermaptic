@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'
@@ -150,12 +150,22 @@ function LabelDeclutter({ registry }) {
   return null
 }
 
+/*
+ * Show or hide one name plate.
+ *
+ * Opacity and pointer-events are written independently on purpose. A plate the
+ * declutter pass drops on the very first frame is already `opacity: 0` from its own
+ * style prop, so a guard that treats pointer-events as a rider of the opacity write
+ * skipped it: the plate stayed `pointer-events: auto` from CSS while invisible, still
+ * on top of a neighbour and taking its click. Measured: a hidden Niagara Falls plate
+ * covered the Toronto plate's own centre, and a click aimed at the plate reading
+ * Chicago entered Niagara Falls. An invisible plate must eat neither clicks nor hover.
+ */
 function setVisible(element, visible) {
   const opacity = visible ? '1' : '0'
-  if (element.style.opacity !== opacity) {
-    element.style.opacity = opacity
-    element.style.pointerEvents = visible ? 'auto' : 'none'
-  }
+  const pointerEvents = visible ? 'auto' : 'none'
+  if (element.style.opacity !== opacity) element.style.opacity = opacity
+  if (element.style.pointerEvents !== pointerEvents) element.style.pointerEvents = pointerEvents
 }
 
 function Marker({ stop, register }) {
@@ -168,6 +178,32 @@ function Marker({ stop, register }) {
   const highlighted = isHovered || isSelected
 
   const elementRef = useRef(null)
+
+  /*
+   * Held down, so a plate answers a finger the way it answers a cursor with a hover.
+   * It is React state rather than a CSS `:active` rule on purpose: a plate is a div
+   * whose click React handles by delegation, and WebKit only paints `:active` for
+   * elements it judges clickable, which is exactly the judgement that differs between
+   * desktop and iPad.
+   */
+  const [pressed, setPressed] = useState(false)
+
+  /*
+   * The release is caught on the window, not only on the plate. A plate can be hidden
+   * by the declutter pass mid-press - which sets it `pointer-events: none`, so the
+   * pointerup never reaches it - and the plate would then hold its pressed look until
+   * it happened to come back into view and be touched again.
+   */
+  useEffect(() => {
+    if (!pressed) return undefined
+    const release = () => setPressed(false)
+    window.addEventListener('pointerup', release)
+    window.addEventListener('pointercancel', release)
+    return () => {
+      window.removeEventListener('pointerup', release)
+      window.removeEventListener('pointercancel', release)
+    }
+  }, [pressed])
 
   const height = modelHeightFor(stop.model)
   const surface = useMemo(
@@ -288,6 +324,7 @@ function Marker({ stop, register }) {
               `marker-label--${stop.country}`,
               isSelected ? 'is-selected' : '',
               isHovered ? 'is-hovered' : '',
+              pressed ? 'is-pressed' : '',
             ]
               .filter(Boolean)
               .join(' ')}
@@ -297,9 +334,36 @@ function Marker({ stop, register }) {
               opacity: 0,
               transition: 'opacity 140ms linear',
             }}
-            onPointerEnter={() => setHoveredId(stop.id)}
-            onPointerLeave={() => setHoveredId((current) => (current === stop.id ? null : current))}
-            onClick={() => select(stop.id)}
+            /*
+             * Only a pointer that can hover may light a plate up. A touch tap fires
+             * an emulated hover on WebKit and there is no matching "out" when the
+             * finger lifts, so the touched plate would stay lit - and its landmark
+             * stay grown - until something else was tapped. On a tablet the press
+             * below is the feedback instead.
+             */
+            onPointerEnter={(event) => {
+              if (event.pointerType === 'mouse') setHoveredId(stop.id)
+            }}
+            onPointerLeave={(event) => {
+              setPressed(false)
+              if (event.pointerType !== 'mouse') return
+              setHoveredId((current) => (current === stop.id ? null : current))
+            }}
+            onPointerDown={() => setPressed(true)}
+            onPointerUp={() => setPressed(false)}
+            onPointerCancel={() => setPressed(false)}
+            /*
+             * A name plate is DOM living inside the canvas' own subtree, so the
+             * canvas' click handler sees this click too. It finds no 3D object under
+             * the cursor and reports a miss, which closes the stop the label just
+             * opened - measured: the reading panel appeared and was gone 2ms later.
+             * Stopping the click here keeps it the label's own; the model's own
+             * click needs no such guard because the ray does hit it.
+             */
+            onClick={(event) => {
+              event.stopPropagation()
+              select(stop.id)
+            }}
           >
             <span className="marker-label__kind" aria-hidden="true">
               {kind.icon}
