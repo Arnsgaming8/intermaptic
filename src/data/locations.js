@@ -187,19 +187,19 @@ export const NATIONAL_COMPARISON = {
       { label: 'Land area', value: '9.15 million km²' },
       { label: 'GDP (nominal)', value: '~$32.4 trillion' },
       { label: 'GDP per capita', value: '~$94,000' },
-      { label: 'Government', value: 'A federal republic where voters elect a president.' },
-      { label: 'Head of state', value: 'A president the people elect' },
-      { label: 'Legislature', value: 'Congress, with 100 senators and 435 representatives.' },
-      { label: 'Official languages', value: 'No official language, though most people use English.' },
+      { label: 'Government', value: 'A federal republic. Voters elect the president.' },
+      { label: 'Head of state', value: 'The president, chosen by voters' },
+      { label: 'Legislature', value: 'Congress: 100 senators and 435 representatives.' },
+      { label: 'Official languages', value: 'No official language. Most people speak English.' },
       { label: 'Currency', value: 'The US dollar (USD)' },
-      { label: 'Highest point', value: 'Denali, also called Mount McKinley, at 6,190 m.' },
+      { label: 'Highest point', value: 'Denali, which many still call Mount McKinley, at 6,190 m.' },
       {
         label: 'Time zones',
-        value: 'Four in the main states, and 9 including Alaska, Hawaii and territories.',
+        value: 'Four in the main states. Nine with Alaska, Hawaii and the territories.',
       },
       {
         label: 'Health system',
-        value: 'Most people get insurance from a job or buy it themselves.',
+        value: 'Most people get insurance through a job, or buy it themselves.',
       },
     ],
   },
@@ -214,19 +214,19 @@ export const NATIONAL_COMPARISON = {
       { label: 'GDP per capita', value: '~$60,300' },
       {
         label: 'Government',
-        value: 'A parliamentary system led by Prime Minister Mark Carney, in office since 2025.',
+        value: 'A parliamentary system. Prime Minister Mark Carney has led it since 2025.',
       },
       {
         label: 'Head of state',
-        value: 'King Charles III, represented in Canada by a Governor General.',
+        value: 'King Charles III, with a Governor General standing in for him.',
       },
       {
         label: 'Legislature',
-        value: 'Parliament, with an elected House of Commons and a Senate whose members are appointed.',
+        value: 'Parliament. The House of Commons is elected, and the Senate is appointed.',
       },
-      { label: 'Official languages', value: 'English and French are both official.' },
+      { label: 'Official languages', value: 'Both English and French hold official status.' },
       { label: 'Currency', value: 'The Canadian dollar (CAD)' },
-      { label: 'Highest point', value: 'Mount Logan in Yukon, at 5,959 m.' },
+      { label: 'Highest point', value: 'Mount Logan, up in Yukon, at 5,959 m.' },
       { label: 'Time zones', value: '6' },
       {
         label: 'Health system',
@@ -238,7 +238,7 @@ export const NATIONAL_COMPARISON = {
   shared: [
     {
       label: 'Border length',
-      value: 'At 8,891 km, the longest border between two countries anywhere.',
+      value: 'At 8,891 km, the longest border between two countries on Earth.',
     },
     {
       label: 'Border since',
@@ -246,11 +246,11 @@ export const NATIONAL_COMPARISON = {
     },
     {
       label: 'Trade',
-      value: 'More than $2 billion of goods and services cross the border every day. Tariffs now apply to some of that trade.',
+      value: 'More than $2 billion in goods and services crosses the border daily. Tariffs now cover part of that trade.',
     },
     {
       label: 'Agreements',
-      value: 'USMCA, signed in 2020, faces a joint review in 2026. NORAD dates from 1958, and the two share a water quality deal.',
+      value: 'USMCA, signed in 2020, faces a joint review in 2026. NORAD dates from 1958, and the two countries share a water quality deal.',
     },
     {
       label: 'Largest shared water body',
