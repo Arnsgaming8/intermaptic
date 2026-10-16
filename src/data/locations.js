@@ -58,7 +58,7 @@ export const PAIRS = [
     subject: 'Government',
     us: 'washington-dc',
     ca: 'ottawa',
-    note: 'Both capitals were picked on purpose to sit between rival regions.',
+    note: 'Both capitals were picked on purpose, to sit between rival regions.',
   },
   {
     id: 'finance',
@@ -66,7 +66,7 @@ export const PAIRS = [
     subject: 'Economy',
     us: 'new-york-city',
     ca: 'toronto',
-    note: 'Both are the banking centre of their country and a home for new immigrants.',
+    note: 'Both are the banking centre of their country and a landing spot for newcomers.',
   },
   {
     id: 'pacific-tech',
@@ -74,7 +74,7 @@ export const PAIRS = [
     subject: 'Economy',
     us: 'san-francisco',
     ca: 'vancouver',
-    note: 'Two technology centres on the Pacific coast, both grown from ports and universities.',
+    note: 'Two technology centres on the Pacific coast, both grown up from ports and universities.',
   },
   {
     id: 'interior-economy',
@@ -82,7 +82,7 @@ export const PAIRS = [
     subject: 'Economy',
     us: 'chicago',
     ca: 'calgary',
-    note: 'Two inland cities moving goods: one runs on trains, the other on energy.',
+    note: 'Two inland cities that move goods: one runs on trains, the other on energy.',
   },
   {
     id: 'culture',
@@ -90,7 +90,7 @@ export const PAIRS = [
     subject: 'Culture',
     us: 'los-angeles',
     ca: 'montreal',
-    note: 'Both export culture worldwide: Hollywood films from Los Angeles and French-language arts from Montreal.',
+    note: 'Both ship culture around the world: Hollywood films and French-language arts.',
   },
   {
     id: 'natural-wonders',
@@ -130,7 +130,7 @@ export const PAIRS = [
     subject: 'Science',
     us: 'kennedy-space-center',
     ca: 'churchill',
-    note: 'Both are small places that look at big things: rockets and the northern sky.',
+    note: 'Two small outposts looking at big things: rockets and the northern sky.',
   },
   {
     id: 'northern-edge',

@@ -13,7 +13,7 @@ export const BORDER_SEGMENTS = [
   {
     id: 'west-49th',
     label: '49th parallel',
-    note: 'A straight line on the 49th parallel, set by the Oregon Treaty in 1846.',
+    note: 'A straight line along the 49th parallel, set by the Oregon Treaty in 1846.',
     points: [
       { lat: 48.99, lng: -123.02 },
       { lat: 49.0, lng: -120.0 },
@@ -29,7 +29,7 @@ export const BORDER_SEGMENTS = [
   {
     id: 'great-lakes',
     label: 'Great Lakes corridor',
-    note: 'The line runs through the middle of 4 of the 5 Great Lakes.',
+    note: 'The line runs through the middle of four of the five Great Lakes.',
     points: [
       { lat: 49.38, lng: -95.15 },
       { lat: 48.05, lng: -90.0 },
@@ -49,7 +49,7 @@ export const BORDER_SEGMENTS = [
   {
     id: 'east-45th',
     label: 'Eastern highlands',
-    note: 'It follows the 45th parallel, then rivers through northern New England.',
+    note: 'It follows the 45th parallel, then cuts through rivers in northern New England.',
     points: [
       { lat: 45.0, lng: -74.75 },
       { lat: 45.0, lng: -71.5 },
@@ -63,7 +63,7 @@ export const BORDER_SEGMENTS = [
   {
     id: 'alaska-yukon',
     label: 'Alaska–Yukon',
-    note: 'It runs up the 141st meridian. The US inherited this line when it bought Alaska in 1867.',
+    note: 'It runs up the 141st meridian. The United States inherited the line when it bought Alaska in 1867.',
     points: [
       { lat: 60.3, lng: -141.0 },
       { lat: 64.0, lng: -141.0 },
@@ -87,14 +87,14 @@ export const BORDER_FACTS = [
   { label: 'Guarded by armies', value: 'Largely unguarded, with no wall along most of its length' },
   {
     label: 'Water crossings',
-    value: 'It crosses 4 of the 5 Great Lakes and the St. Lawrence River.',
+    value: 'It crosses four of the five Great Lakes and the St. Lawrence River.',
   },
   {
     label: 'Commission',
-    value: 'A joint group called the International Boundary Commission has measured the line since 1925.',
+    value: 'A joint group, the International Boundary Commission, has measured the line since 1925.',
   },
   {
     label: 'Tariff fight',
-    value: 'The U.S. set 50 per cent tariffs on C$27.6 billion of goods in August 2026. Canada replied in September with 15, 25 and 50 per cent tariffs.',
+    value: 'In August 2026 the U.S. set 50 per cent tariffs on C$27.6 billion of goods. Canada hit back in September with tariffs of 15, 25 and 50 per cent.',
   },
 ]

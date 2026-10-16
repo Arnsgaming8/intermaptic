@@ -23,18 +23,18 @@ export const US_STOPS = [
     ],
     sections: {
       geography:
-        'Washington sits where the Potomac River meets flat land near the coast. The city was planned as a square ten miles wide. Part of that land went back to Virginia in 1846. The city sits on the fall line, where the hills meet the flat coastal plain. The Anacostia River joins the Potomac inside the city. Summers are hot and wet, and winters bring some snow. The land is low, so the Potomac can flood after heavy rain. About 6.5 million people live in the suburbs in Maryland and Virginia. The figures are the newest I could find, listed in the sources.',
+        'Washington sits where the Potomac River meets flat ground near the coast. The city sits on the fall line. Hills lie to the west, and the flat coastal plain starts here. Planners laid the city out as a square ten miles wide. Part of that square went back to Virginia in 1846. The Anacostia River joins the Potomac inside the city limits. Summers come hot and wet. Winters bring a little snow. The land sits low, so heavy rain can push the Potomac over its banks. About 6.5 million people live in the Maryland and Virginia suburbs.',
       culture:
-        'The federal government is the main business, so museums and monuments fill the city. The Smithsonian museums are free. U Street holds a deep history of Black American culture. People come from every state and from many other countries. The National Mall holds the monuments, and it is open to everyone. About four in ten residents are Black. Go-go music began here, and jazz clubs once lined the streets. The city has its own baseball team and a big basketball following.',
+        'Museums and monuments fill the city, because the government is the main business here. The Smithsonian museums cost nothing to enter. U Street holds a deep history of Black American culture. Residents come from every state. Many were born in other countries. The National Mall holds the monuments, and anyone can walk it. About four in ten residents are Black. Go-go music started here. Jazz clubs once lined the streets, and they drew players from all over. The city has its own baseball team and a loud basketball crowd.',
       government:
-        'Washington is not a state, so Congress has the final say over its laws. Residents elect a mayor and a council of thirteen. Still, the city has no voting seat in Congress. The mayor runs the city day to day, and the council passes local laws. Congress can block any local law and sets the city budget. Residents pay federal taxes like everyone else, yet they have no vote in Congress. The city elects a delegate who can speak in the House but cannot vote. National Guard troops have been stationed here since August 2025. Residents keep arguing for statehood.',
+        'Washington is not a state. That means Congress has the last word on its laws. Residents elect a mayor and a council of thirteen. They still have no voting seat in Congress. The mayor runs the city day to day, and the council passes local laws. Congress can block any of those laws, and it sets the city budget. People here pay federal taxes like everyone else. Their delegate can speak in the House but cannot vote. National Guard troops have stood in the city since August 2025. Residents keep arguing for statehood.',
       economy:
-        'The federal government is the biggest employer, and it has been shrinking. Federal job cuts since 2025 have hit the region hard. A technology corridor runs west, and Northern Virginia holds many data centers. Tourism brings millions of visitors who spend money on hotels and food. Dulles and Reagan airports link the city to the world. Hospitals, universities and research labs also employ many people. Many people in the region work for contractors that serve federal agencies. Nonprofit groups and law firms also have their headquarters in the city.',
+        'The federal government is the biggest employer here, and it has been shrinking. Cuts since 2025 have hit the region hard. Data centers fill Northern Virginia. Tourism brings in millions of visitors a year. They spend money on hotels and food. Dulles and Reagan, the two airports, link the city to the world. Hospitals and universities employ thousands of people. Research labs sit beside them. Many residents work for contractors that serve federal agencies. Nonprofits and law firms keep their headquarters downtown.',
     },
     comparison: [
-      'Washington was built on empty land, starting in 1790. Queen Victoria picked Ottawa as the capital in 1857.',
-      'Congress can overrule laws passed in Washington and controls its budget. Ottawa is a normal city inside Ontario, with no federal body above it.',
-      'People in Washington pay federal taxes but have no voting seat in Congress. People in Ottawa vote for Parliament like other Canadians.',
+      'Washington was built from scratch on empty land, starting in 1790. Queen Victoria picked Ottawa as a capital in 1857.',
+      'Congress can overrule the laws Washington passes, and it controls the budget. Ottawa answers to no federal body above it.',
+      'Washington residents pay federal taxes but cannot vote in Congress. Ottawa residents vote for Parliament like other Canadians.',
     ],
     sources: [
       'U.S. Census Bureau, 2025',
@@ -59,18 +59,18 @@ export const US_STOPS = [
     ],
     sections: {
       geography:
-        'The Hudson River cuts a gap through the mountains, which made the city a port. Manhattan sits on hard rock. That rock is part of why very tall buildings rose there. The city spreads over five boroughs and several islands. The East River is a strait, not a true river. The Atlantic Ocean and Long Island Sound border the city. Winters are cold with snow, and summers are hot and humid. Storms and rising water threaten the low streets near the coast. The figures are the newest I could find, listed in the sources.',
+        'The Hudson River cuts a gap through the mountains. That gap made this a port. Manhattan stands on hard rock. Towers could rise on it because the rock holds the weight. The city spreads across five boroughs and several islands. The East River is a strait, and it is not a true river. The Atlantic Ocean and Long Island Sound border the city. Winters stay cold and snowy. Summers turn hot and humid. Storms and rising water threaten the low streets along the coast.',
       culture:
-        'Millions of immigrants arrived through Castle Garden and Ellis Island. Today, one in three residents was born abroad. More than two hundred languages are spoken in the city schools. Chinatown, Little Italy and Harlem each grew from a different wave of newcomers. Broadway theatres, museums and music halls draw crowds all year. Pizza, bagels and street food are part of daily life. Times Square draws visitors, and the New Year ball drop is famous. The Yankees and the Knicks are the home teams.',
+        'Immigrants poured in through Castle Garden and later through Ellis Island. Newcomers keep coming. One in three residents was born outside the country. The schools hear more than two hundred languages. Chinatown, Little Italy and Harlem each grew from a different wave of arrivals. Broadway theatres and museums draw crowds all year. So do the concert halls. Pizza, bagels and street food are daily fare. Times Square pulls in visitors, and the New Year ball drop is famous. The Yankees and the Knicks are the home teams.',
       government:
-        'A mayor runs the city with a City Council of fifty-one members. Zohran Mamdani became mayor in January 2026. He is the first Muslim and the first South Asian mayor. The United Nations has its headquarters here. Each borough has its own president. The council writes local laws and must approve the city budget. The city also elects a public advocate and a comptroller. Taxes are paid to the city, the state and the country. New York State can pass laws that the city must follow.',
+        'A mayor runs New York City with a City Council of fifty-one members. Zohran Mamdani took office in January 2026. He is the first Muslim mayor and the first South Asian one. The United Nations keeps its headquarters here. Each borough has its own president. The council writes local laws. It also has to approve the city budget. Voters elect a public advocate and a comptroller as well. Taxes go to the city, the state and the country. New York State can pass laws the city must follow.',
       economy:
-        'Wall Street and the New York Stock Exchange sit at the center of the economy. The port of New York and New Jersey is the busiest on the East Coast. The city budget is now more than one hundred billion dollars. Banks, insurers and law firms fill the downtown towers. Fashion, publishing, advertising and television are big employers. Many of these jobs likely pay well. Tourism brings tens of millions of visitors every year. Rents and home prices are among the highest in the country.',
+        'Wall Street and the New York Stock Exchange sit at the center of it all. Banks, insurers and law firms fill the downtown towers. Fashion, publishing, advertising and television employ thousands more. The port of New York and New Jersey is the busiest on the East Coast. Tourists arrive by the tens of millions each year. They fill hotels and restaurants. The city budget has passed one hundred billion dollars. Rents and home prices run high. They rank among the highest in the country.',
     },
     comparison: [
-      'New York has about two and a half times Toronto\u2019s people. Both hold their country\u2019s main stock exchange.',
-      'The New York Stock Exchange is the biggest market in the world. The Toronto Stock Exchange is medium-sized compared with it.',
-      'Both are the top place where people new to the country first arrive. Both cities draw large shares of their country\u2019s newcomers.',
+      'New York is about two and a half times the size of Toronto. Each city holds its country\u2019s main stock exchange.',
+      'The New York Stock Exchange is the biggest market in the world. Toronto\u2019s exchange is medium-sized beside it.',
+      'Both cities are where most newcomers to the country land first. Both draw a large share of their country\u2019s immigrants.',
     ],
     sources: [
       'U.S. Census Bureau, 2025',
@@ -95,18 +95,18 @@ export const US_STOPS = [
     ],
     sections: {
       geography:
-        'The Bay Area wraps around a bay that the ocean flooded long ago. The San Andreas and Hayward faults cross the region. Fog rolls in most afternoons. The Golden Gate is the strait that joins the bay to the ocean. Hills shape the city, so many streets climb steeply. The bay is shallow and muddy near the edges. Summers are cool and foggy, and rain falls mostly in winter. Cable cars still climb the hills in the city center. The wider region stretches from wine country to Silicon Valley. The figures are the newest I could find, listed in the sources.',
+        'The Bay Area wraps around a bay that the ocean flooded long ago. Two faults cross the region, the San Andreas and the Hayward. Fog rolls in most afternoons. The Golden Gate is the strait that joins the bay to the ocean. Hills shape the city, so many streets climb steeply. Near the edges the bay turns shallow and muddy. Summers stay cool and grey. Most of the rain falls in winter. Cable cars still climb the hills downtown. The wider region stretches from wine country down to Silicon Valley.',
       culture:
-        'Writers called the Beats gathered in North Beach in the 1950s. Later, the technology industry became the biggest force in the city. Berkeley and Stanford bring in many researchers. Software and artificial intelligence companies now drive the city again. The city keeps a large Chinatown, one of the oldest in North America. Mission murals and the 1967 Summer of Love both became famous here. The city is known for sourdough bread and seafood. The 49ers were founded here, and the Giants have played here since 1958.',
+        'Writers called the Beats gathered in North Beach back in the 1950s. Technology took over later, and it is the city\u2019s biggest force now. Berkeley and Stanford bring in researchers from everywhere. Software and artificial intelligence companies drive the city again. The Chinatown here is one of the oldest in North America. Mission murals became famous. So did the Summer of Love in 1967. Sourdough bread and seafood are local staples. The 49ers started here. The Giants have played here since 1958.',
       government:
-        'San Francisco is both a city and a county, and it runs as one. Voters elect a mayor and an eleven-member Board of Supervisors. The mayor runs the city and can veto laws from the board. The board meets in City Hall and passes local rules. Voters often decide big questions directly at the ballot box. Many small cities near the bay have their own councils. The state of California sets many of the rules they follow. Voters also elect a district attorney and a sheriff.',
+        'San Francisco is both a city and a county, and it runs as one. Voters elect a mayor. The Board of Supervisors has eleven members. The mayor runs the city and can veto the board. The board meets in City Hall, and it passes the local rules. Big questions often go straight to the ballot. Voters decide them directly. Dozens of small cities around the bay have their own councils. California sets many of the rules they follow. Voters also choose a district attorney and a sheriff.',
       economy:
-        'The Bay Area leads the world in software and in money for new companies. Artificial intelligence companies have grown quickly in the city. The Port of Oakland is one of the busiest in the country. Computer chip makers started in the valley south of the bay. Tourism brings visitors for the bridge, the bay and the food. Salaries appear to be high, and so are rents and house prices. Fishing boats still work out of the city wharves. Venture capital firms in the city fund many of these new companies.',
+        'The Bay Area leads the world in software and in money for new firms. Artificial intelligence companies have grown fast. Chip makers started in the valley south of the bay. The Port of Oakland is one of the busiest in the country. Tourists come for the bridge, the bay and the food. Salaries run high. So do rents and house prices. Fishing boats still work out of the city wharves. Venture capital firms downtown fund many of the new companies.',
     },
     comparison: [
-      'Both are port cities on the Pacific with big Asian communities. Oakland ships the Bay Area\u2019s goods, and Vancouver is Canada\u2019s busiest port.',
-      'The Bay Area is much bigger than Vancouver and runs on software. Vancouver has real tech jobs too, though far fewer.',
-      'Homes cost too much in both places, among the priciest in North America.',
+      'Both are Pacific port cities with large Asian communities. Oakland handles the Bay Area\u2019s cargo, and Vancouver is Canada\u2019s busiest port.',
+      'The Bay Area is far bigger than Vancouver, and software drives it. Vancouver has real technology jobs too, just fewer of them.',
+      'Homes cost too much in both places. Both rank among the priciest markets in North America.',
     ],
     sources: [
       'U.S. Census Bureau, 2025',
@@ -130,18 +130,18 @@ export const US_STOPS = [
     ],
     sections: {
       geography:
-        'Chicago sits at the south end of Lake Michigan, on almost perfectly flat land. A short canal here links the lake to the Mississippi River system. The lake keeps the city cooler in summer and warmer in winter. The Chicago River runs through the middle of downtown. Winters are long and cold, with strong wind off the lake. The city sits on the edge of the wide, flat prairie. Engineers reversed the river in 1900 to protect the lake. Thunderstorms and tornadoes reach the area in spring and summer. The figures are the newest I could find, listed in the sources.',
+        'Chicago sits at the south end of Lake Michigan. The land around it is almost perfectly flat. Engineers reversed the Chicago River in 1900 to keep the lake clean. The river runs through the middle of downtown. A short canal here links the lake to the Mississippi River system. The lake cools it in summer. It warms the city in winter. Winters run long and cold, with wind off the water. Thunderstorms and tornadoes reach the area in spring and summer. The city sits on the edge of wide, flat prairie.',
       culture:
-        'After an 1871 fire, the city rebuilt with steel frames and helped invent the skyscraper. The city is a home of blues and gospel music. Polish, Irish, Italian and Mexican families shaped the neighborhoods. Deep-dish pizza and hot dogs are local favorites. The Art Institute and the Field Museum sit near the lake. The Bulls, the Bears and the Cubs all play here. Street festivals fill the summer, and the lakefront draws crowds. Theatre companies in the city stage new plays every year.',
+        'An 1871 fire burned the city, and crews rebuilt it from the ground up. They used steel frames, and the skyscraper was born here. Blues and gospel music grew up in these neighborhoods. Polish, Irish, Italian and Mexican families each shaped a district. Deep-dish pizza and hot dogs are local favorites. The Art Institute and the Field Museum both sit near the lake. The Bulls, the Bears and the Cubs all play here. Street festivals fill the summer. The lakefront draws crowds all year. Theatre companies stage new plays every season.',
       government:
-        'A mayor and a City Council of fifty members run Chicago. Mayor Brandon Johnson has struggled to close large budget gaps. The city is divided into fifty wards, each with an alderman. Cook County runs courts, jails and public health. Illinois sets the rules for schools and for city taxes. The city collects property taxes to pay for services. Police, fire and trash collection are city departments. Voters elect the mayor every four years.',
+        'Chicago is run by a mayor who works with a fifty-member City Council. The city splits into fifty wards, and each one elects an alderman. Mayor Brandon Johnson has fought to close big budget gaps. Cook County runs the courts, the jails and public health. Illinois sets the rules for schools and for city taxes. Property taxes pay for much of what the city does. Police, fire and trash collection are city departments. Voters elect the mayor. The term runs four years.',
       economy:
-        'Chicago is a freight and train crossing for the whole country. It has one of the biggest futures markets in the world. It also has one of the busiest airports. Trains from the east and west meet at the city rail yards. The Board of Trade trades grain, meat and other goods. O\u2019Hare airport is a hub for flights around the world. Factories here build machinery, food, steel and farm equipment. Manufacturing has likely shrunk, so more people now work in offices.',
+        'Chicago is where the trains from the east and the west meet up. Freight crosses the whole country through this city. The Board of Trade trades grain, meat and a few other goods. It runs one of the biggest futures markets in the world. O\u2019Hare airport is a hub for flights around the world. Factories here build machinery, food, steel and farm equipment. Manufacturing has shrunk. More people work in offices now.',
     },
     comparison: [
-      'Chicago is the train and shipping hub of the continent. Calgary is Canada\u2019s energy capital, and both sit far from the coast.',
-      'Chicago makes many different things, so hard times in one industry do not sink it. Calgary\u2019s good years and bad years follow the price of oil and gas.',
-      'Both are newer cities on flat plains that built busy downtowns in the 1900s. Each one matters more in its country than its size would suggest.',
+      'Chicago moves freight for the whole continent. Calgary sits on Canada\u2019s oil and gas, and the two cities sit far inland.',
+      'Chicago builds many different things, so one weak industry cannot sink it. Calgary rises and falls with the price of oil and gas.',
+      'Both grew up fast on flat plains and built busy downtowns in the 1900s. Each one matters more in its country than its size suggests.',
     ],
     sources: [
       'U.S. Census Bureau, 2025',
@@ -165,18 +165,18 @@ export const US_STOPS = [
     ],
     sections: {
       geography:
-        'Los Angeles sits on flat ground and low hills, between mountains and the ocean. It is dry, so water comes from far away, and earthquakes are common. The city spreads across a wide basin ringed by mountains. The Los Angeles River is mostly concrete and carries little water. Summers are hot and dry, and winters are mild and wet. Wildfires break out in the hills when the wind blows hard. The Pacific coast runs along the west side of the city. Fog and smog both hang over the basin on quiet days. The figures are the newest I could find, listed in the sources.',
+        'Los Angeles sits on flat ground and low hills, between mountains and sea. The place is dry, so most of its water comes from far away. Earthquakes shake the basin often. The Los Angeles River runs through it inside a concrete channel. Summers come hot and dry. Winters stay mild and wet. Hard winds off the desert can set the hills on fire. The Pacific coast lines the west side of the city. Fog and smog both hang over the basin on quiet days.',
       culture:
-        'Film companies moved here in the 1910s for steady sunshine. The city began as a Spanish settlement. About half of its people today are Latino. Spanish is spoken widely, and many signs are in two languages. Korean, Armenian, Chinese and Mexican neighborhoods each have their own streets. Hollywood draws actors, writers and film crews from everywhere. Tacos, burgers and street food are part of daily life. The Dodgers and the Lakers are the city\u2019s best known teams. Museums, concert halls and the beach fill weekends.',
+        'Film companies moved here in the 1910s, drawn by the steady sunshine. It began as a Spanish settlement. About half the people living in the city today are Latino. Spanish is spoken everywhere. Many signs are printed in two languages. Korean, Armenian, Chinese and Mexican neighborhoods each have their own streets. Hollywood pulls in actors, writers and film crews. Tacos, burgers and street food are part of daily life. The Dodgers and the Lakers are the best known teams in town. Museums, concert halls and the beach fill most weekends.',
       government:
-        'A mayor and a City Council of fifteen members run the city. Karen Bass has been mayor since 2022. Voters elect the mayor for four years, with a limit of two terms. Each council member represents one district of the city. The county runs health and jails, and it has its own supervisors. About 72,000 people in the county have no home. The city pays for police, fire and trash collection. The state of California sets many rules for cities.',
+        'A mayor and fifteen council members share the job of running the city. Karen Bass has been mayor since 2022. Voters give the mayor four years. A mayor may serve no more than two terms. Each council member represents one district. The county runs health care and the jails. The county has its own board of supervisors. About 72,000 people across the county have no home of their own. The city pays for its police, fire crews and trash pickup. California sets many of the rules cities follow.',
       economy:
-        'Movies and TV are the city\u2019s trademark. Nearby ports bring in about a third of all containers entering the country. Film, music and streaming shows employ many thousands of people. The ports of Los Angeles and Long Beach stand next to each other. The city is preparing for the 2028 Summer Olympics. It was also a host city for the 2026 World Cup. Housing costs have risen far faster than wages. Tourism and hotel work give many more people steady jobs.',
+        'Movies and television made this city famous. The ports next door bring in about a third of the country\u2019s shipping containers. Film, music and streaming shows employ thousands of people. The ports of Los Angeles and Long Beach sit right next to each other. The city is getting ready for the 2028 Summer Olympics. It was also a host city for the 2026 World Cup. Housing costs have climbed fast. Wages have not kept up. Tourism and hotel work keep many people employed.',
     },
     comparison: [
-      'Los Angeles leads North America in movies, TV and streaming shows. Montreal leads French-language film, music and design, but for a smaller audience.',
-      'Many people speak two languages in both cities. Montreal is French-speaking at its heart, unlike most of North America.',
-      'Los Angeles is flat and spread out, so most people there drive. Montreal is packed more tightly on an island, with a train system people use.',
+      'Los Angeles leads North America in movies, television and streaming. Montreal leads French-language film, music and design for a smaller audience.',
+      'In both cities many people speak two languages. Montreal is French at its heart, unlike almost anywhere else on the continent.',
+      'Los Angeles sprawls across a flat basin, so most people drive. Montreal packs onto an island, with a train system residents actually use.',
     ],
     sources: [
       'U.S. Census Bureau, 2025',
@@ -201,18 +201,18 @@ export const US_STOPS = [
     ],
     sections: {
       geography:
-        'The Grand Canyon is a deep gorge in northern Arizona, cut by the Colorado River. It runs about 446 kilometers and drops close to 1.8 kilometers. Layered rock walls show almost two billion years of Earth history. The river at the bottom is fast and cold. The plateau around the gorge is high and dry, with pine and scrub. Winters bring snow on the rims, and summers are very hot. Side canyons cut into the walls, and springs feed small streams. The Colorado River keeps cutting deeper into the rock. The figures are the newest I could find, listed in the sources.',
+        'The Grand Canyon is a deep gorge in northern Arizona. The Colorado River carved it out. It runs about 446 kilometres from end to end. In places it drops close to 1.8 kilometres. The layered walls show almost two billion years of history. The river at the bottom runs fast and cold. The plateau above stays high and dry. Pines and scrub grow on it. Winters bring snow to the rims, and the summers get very hot. Side canyons cut into the walls, and springs feed small streams below.',
       culture:
-        'These lands are the ancestral home of eleven Native nations. The park became a national park in 1919 and draws millions of visitors a year. The Havasupai, Hopi and Navajo nations live near the canyon. Native people have lived in and around the gorge for thousands of years. Visitors come to hike, ride mules and look from the rim. A railway from Williams has carried tourists since 1901. Artists and writers likely helped make the canyon famous. Rangers give talks about the rocks, plants and animals.',
+        'Eleven Native nations call these lands their ancestral home. The park dates from 1919. Millions of people come every year. The Havasupai, Hopi and Navajo nations live nearby. Native people have lived in and around the gorge for thousands of years. Visitors come to hike, ride mules and look out from the rim. A railway from Williams has carried tourists since 1901. Painters and writers helped make the canyon famous. Rangers give talks about the rocks, the plants and the animals.',
       government:
-        'Almost all of the canyon is federal land, run by the National Park Service. Native reservations border it, and those nations govern themselves. The park sets rules for trails, camping and river trips. River trips need a permit from the park service. Native nations make their own laws on their own land. The park is paid for by taxes and by visitor fees. Congress made it a national park by law in 1919. Native nations and the park work together on cultural sites.',
+        'Almost all of the canyon belongs to the federal government. The National Park Service runs it. Native reservations border the park. Those nations govern themselves. The park sets the rules for its trails, camping and river trips. River trips need a permit from the park. Taxes and visitor fees pay for the park. Congress made it a national park by law in 1919. Native nations make their own laws on their own land. The Native nations and the park service work together on cultural sites.',
       economy:
-        'Tourism likely drives the local economy, and towns like Flagstaff depend on it. Hotels, cafés and shops along the rim employ local people. The Grand Canyon Railway brings visitors by train each day. Glen Canyon Dam sits upstream on the same river. Dams along the river make electricity for cities far away. Park fees pay for rangers, roads and repairs. Visitors from outside the United States pay an extra $100 per person since January 2026. Restaurants and gift shops sell local crafts to visitors.',
+        'Tourism drives the local economy. Flagstaff and the other towns nearby all depend on it. Hotels, cafés and shops along the rim employ local people. The Grand Canyon Railway brings visitors in by train every single day. Glen Canyon Dam sits upstream on the very same river. Dams along the river send electricity to cities far from here. Park fees pay for rangers, roads and repairs. Visitors from outside the United States pay an extra $100 per person. That fee started in January 2026. Restaurants and gift shops sell local crafts.',
     },
     comparison: [
-      'The Grand Canyon is a dry gorge cut by a river, run by the government. Banff is icy mountain country, Canada\u2019s first national park, set aside in 1885.',
-      'Native nations with their own governments border the Grand Canyon. Banff is federal land inside Alberta, and also a real town with an elected mayor.',
-      'Both are advertised as wild land where nobody lives. Thousands live in Banff all year. Only a few live on the canyon floor.',
+      'The canyon is a dry gorge carved by one river. Banff is icy mountain country, and Canada set it aside as a park in 1885.',
+      'Native nations with their own governments border the canyon. Banff is federal land inside Alberta and also a real town with an elected mayor.',
+      'Both get sold as wild land where nobody lives. Thousands live in Banff all year, and only a few live on the canyon floor.',
     ],
     sources: [
       'National Park Service, 2026',
@@ -236,18 +236,18 @@ export const US_STOPS = [
     ],
     sections: {
       geography:
-        'New Orleans sits near the mouth of the Mississippi, between the river and Lake Pontchartrain. Much of it sits below sea level. Hurricane Katrina flooded much of the city in 2005. The river runs higher than the streets in many places. Levees and pumps keep water out of the city. Summers are hot, wet and long, with sudden heavy rain. Hurricanes form in the Gulf of Mexico and can strike the coast. Wetlands south of the city likely help slow storm surges. The figures are the newest I could find, listed in the sources.',
+        'New Orleans sits near the mouth of the Mississippi River. The river runs along one side of the city, the lake along the other. Much of the city sits low. Parts of it lie below sea level. Hurricane Katrina flooded much of the city back in 2005. In many places the river runs higher than the streets do. Levees hold the river back. Pumps push the water out again. Summers stay hot, wet and long, with sudden downpours of rain. Hurricanes form out in the Gulf of Mexico and sometimes swing this way.',
       culture:
-        'France founded the city in 1718, and Spain received it in 1762. It became American with the 1803 Louisiana Purchase. Many people say jazz was born here. African, French, Spanish and Caribbean roots mixed into Creole culture. Brass bands still play in the streets and at funerals. Mardi Gras brings parades, costumes and crowds every year. Gumbo, jambalaya and beignets are local dishes. The city has strong Catholic traditions and old churches. Musicians, cooks and artists keep the culture alive.',
+        'France founded the city in 1718. Spain took it over in 1762. It became American with the Louisiana Purchase in 1803. Lots of people say jazz was born right here. African, French, Spanish and Caribbean roots all mixed into Creole culture. Brass bands still play in the streets and at funerals all over town. Mardi Gras brings parades, costumes and crowds every year. Gumbo, jambalaya and beignets are local dishes. Catholic traditions and old churches run deep. Musicians, cooks and artists keep the culture alive from year to year.',
       government:
-        'A mayor and a City Council of seven members run the city. Helena Moreno became mayor in January 2026. The city and Orleans Parish are run as one government. Louisiana is divided into parishes instead of counties. Flood protection is shared by a state authority and the Army Corps of Engineers. The Sewerage and Water Board handles drains and drinking water. Federal money helps pay for levees and pumps. The state of Louisiana sets many rules for cities and parishes.',
+        'A mayor and a City Council of seven members run the city. Helena Moreno took office in January 2026. The city and Orleans Parish share one government. Louisiana uses parishes instead of counties. A state authority and the Army Corps of Engineers share the flood work. The Sewerage and Water Board handles drains and drinking water. Federal money helps pay for levees and pumps. The state sets many rules for cities. State law covers both of them.',
       economy:
-        'The port of South Louisiana handles more cargo than any other port in the Americas. Oil and gas are big here, and tourism employs many people. Ships carry grain, oil, coffee and steel along the river. Chemicals and plastics are made in plants upriver. Visitors come for music, food and festivals. Hospitals and universities are among the biggest employers. Many workers likely lost jobs when the storm hit in 2005. The city also has a large shipping and logistics sector.',
+        'The port of South Louisiana handles more cargo than any other port in the Americas. Ships carry grain, oil, coffee and steel up and down the river. Oil and gas are big business here. Chemical and plastic plants sit upriver. Tourism employs many people. Visitors come here for the music, the food and the festivals. Hospitals and universities are among the biggest employers. The city also has a large shipping and logistics sector. The 2005 storm cost many workers their jobs.',
     },
     comparison: [
-      'Both began as French towns and kept that past more than any other city. Quebec City stayed mostly French-speaking, while New Orleans became English-speaking.',
-      'New Orleans is a port on soft ground beside the Mississippi River. Quebec City sits high on a rock above the river, behind standing walls.',
-      'New Orleans is English-speaking with strong Caribbean and African roots. Quebec City is French-speaking and shaped by the Catholic Church.',
+      'Both started out as French towns and hold on to that past. Quebec City stayed French-speaking, while New Orleans switched to English.',
+      'New Orleans is a river port built on soft ground. Quebec City sits high on a rock above the river, behind walls that still stand.',
+      'New Orleans speaks English and carries Caribbean and African roots. Quebec City speaks French and was shaped by the Catholic Church.',
     ],
     sources: [
       'U.S. Census Bureau, 2025',
