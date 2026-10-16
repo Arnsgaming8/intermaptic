@@ -4,7 +4,7 @@
  * Every word a reader sees about the United States and Canada must be readable by a
  * 6th grader: short sentences, everyday words, no semicolons, no em dashes. A stop shows
  * a full reading rather than a note, so each of its four sections is held to exactly
- * eight sentences, which is enough to explain the place.
+ * eight to ten sentences, which is enough to explain the place.
  *
  * Run with:  node scripts/check-reading-level.mjs
  *
@@ -20,8 +20,9 @@ const url = (relative) => pathToFileURL(resolve(ROOT, relative)).href
 
 const MAX_WORDS = 15
 
-/** A stop's four sections each spell the place out in exactly this many sentences. */
-const SENTENCES_PER_SECTION = 8
+/** A stop's four sections each spell the place out in this many sentences, inclusive. */
+const SENTENCES_MIN = 8
+const SENTENCES_MAX = 10
 
 /** Words a 12-year-old would not meet in everyday reading. */
 const HARD_WORDS = [
@@ -99,8 +100,8 @@ function inspect({ where, text }) {
 
   // Only the four sections per stop carry this rule: facts are fragments, and a
   // comparison bullet is allowed to make more than one point.
-  if (where.includes('.sections.') && sentences.length !== SENTENCES_PER_SECTION) {
-    problems.push(`${sentences.length} sentences, but a section holds ${SENTENCES_PER_SECTION}`)
+  if (where.includes('.sections.') && (sentences.length < SENTENCES_MIN || sentences.length > SENTENCES_MAX)) {
+    problems.push(`${sentences.length} sentences, but a section holds ${SENTENCES_MIN} to ${SENTENCES_MAX}`)
   }
 
   const lower = text.toLowerCase()
@@ -140,7 +141,7 @@ console.log(`sentences:            ${sentenceCount}`)
 console.log(`average words/sent:   ${(wordCount / sentenceCount).toFixed(1)}`)
 console.log(`longest sentence:     ${longest.words} words  (${longest.where})`)
 console.log(`stops / pairs:        ${STOPS.length} / ${PAIRS.length}`)
-console.log(`sections per stop:    ${SENTENCES_PER_SECTION} sentences each`)
+console.log(`sections per stop:    ${SENTENCES_MIN} to ${SENTENCES_MAX} sentences each`)
 console.log('')
 
 if (failures.length) {

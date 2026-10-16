@@ -63,7 +63,7 @@ export const BORDER_SEGMENTS = [
   {
     id: 'alaska-yukon',
     label: 'Alaska–Yukon',
-    note: 'It runs up the 141st meridian, added when the US bought Alaska in 1867.',
+    note: 'It runs up the 141st meridian. The US inherited this line when it bought Alaska in 1867.',
     points: [
       { lat: 60.3, lng: -141.0 },
       { lat: 64.0, lng: -141.0 },
@@ -84,7 +84,7 @@ export const BORDER_WAYPOINTS = BORDER_SEGMENTS.flatMap((segment) => segment.poi
 export const BORDER_FACTS = [
   { label: 'Total length', value: '8,891 km long, counting Alaska' },
   { label: 'Rank', value: 'The longest border in the world between two countries' },
-  { label: 'Guarded by armies', value: 'No soldiers or walls on either side since 1872' },
+  { label: 'Guarded by armies', value: 'Largely unguarded, with no wall along most of its length' },
   {
     label: 'Water crossings',
     value: 'It crosses 4 of the 5 Great Lakes and the St. Lawrence River.',
@@ -95,6 +95,6 @@ export const BORDER_FACTS = [
   },
   {
     label: 'Tariff fight',
-    value: 'The United States taxes most Canadian goods at 25 per cent. Canada answered with its own tariffs in September 2026.',
+    value: 'The United States taxes many Canadian goods at 25 per cent. Goods covered by the USMCA trade deal are exempt.',
   },
 ]

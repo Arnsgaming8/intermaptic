@@ -246,7 +246,7 @@ export const NATIONAL_COMPARISON = {
     },
     {
       label: 'Trade',
-      value: 'More than $2 billion of goods and services cross the border every day. Tariffs now cover most of that trade.',
+      value: 'More than $2 billion of goods and services cross the border every day. Tariffs now apply to some of that trade.',
     },
     {
       label: 'Agreements',

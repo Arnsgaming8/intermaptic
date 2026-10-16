@@ -12,7 +12,7 @@ It is built with Vite, React and react-three-fiber. The frontend is a static sit
 
 - **A 3D globe you can spin, zoom and tap.** Each landmark is a hand-built 3D model. It stands on the surface of a dark, glowing planet. The models are meant to be the brightest thing you see.
 - **Twenty-three beacons, twelve comparisons.** Each stop is matched with a stop across the border that fits the same theme. The themes are capitals, big finance cities, Pacific tech areas, inland economies and cultural hubs. Other themes are natural wonders, old quarters, carved rock, space and the northern sky. The last two are life at the top of the map. They also cover managed water next to wild water. The shared border is a pair too.
-- **Four readings for every stop.** Geography, culture, government and economy. Each one runs to eight sentences. So a stop explains the place instead of just naming it. The government part also explains how the local government works, not just the national one.
+- **Four readings for every stop.** Geography, culture, government and economy. Each one runs to eight to ten sentences. So a stop explains the place instead of just naming it. The government part also explains how the local government works, not just the national one.
 - **Side by side notes.** Each stop has a few comparison points. They name the stop it is matched with across the border. When you pick a stop, a curved line is drawn to its pair.
 - **A country page.** One table for each country. It shows population, area, GDP, government, head of state, official languages and the health system. It also shows the numbers the two countries share.
 - **The border, drawn on the globe.** The 49th parallel and the Great Lakes area are drawn as a glowing dashed ribbon. The eastern highlands and the Alaska and Yukon line are drawn too.
@@ -246,7 +246,7 @@ All twenty-three landmarks sit inside one continent. Washington and New York are
 **Everything a reader sees about the two countries is written for a 6th grade level.** That is about age 11 to 12. That means the taglines and the quick facts. It also means the four `sections` on every stop, the `comparison` bullets and the `sources` lines. The pair notes in `src/data/locations.js` and the country-level rows in `NATIONAL_COMPARISON` count too. The reading panel sets each stop out as four separate sections, one per subject. The rules are:
 
 - no sentence longer than **15 words**.
-- **eight sentences per section**, which is enough to explain the place.
+- **eight to ten sentences per section**, which is enough to explain the place.
 - everyday words, with no jargon left unexplained.
 - no semicolons and no em dashes in reader-facing text.
 
@@ -256,7 +256,7 @@ It is checked, not just meant:
 npm run check:reading
 ```
 
-That script walks every string in the data files and measures each sentence. It reports the average, the longest sentence, and any string that breaks a rule. Today it reports 436 strings and 1154 sentences. The average sentence is 9.4 words, and the longest is exactly 15 words. It fails a section that is not exactly eight sentences long. `npm run check:all` runs it with the atlas and API checks. The GitHub Pages workflow runs all three. So a hard-to-read sentence cannot reach the deployed site.
+That script walks every string in the data files and measures each sentence. It reports the average, the longest sentence, and any string that breaks a rule. Today it reports 436 strings and 1154 sentences. The average sentence is 9.4 words, and the longest is exactly 15 words. It fails a section that is not eight to ten sentences long. `npm run check:all` runs it with the atlas and API checks. The GitHub Pages workflow runs all three. So a hard-to-read sentence cannot reach the deployed site.
 
 ### Adding a landmark model
 

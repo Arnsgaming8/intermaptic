@@ -4,7 +4,7 @@ import { codeOf } from '../data/locations.js'
 
 /**
  * The four subjects a stop is written about, in reading order, with the glyph and the
- * heading that stand for each. Each one runs to eight sentences, so a stop reads as a
+ * heading that stand for each. Each one runs to eight to ten sentences, so a stop reads as a
  * full account of the place rather than a note.
  */
 const SECTIONS = [
