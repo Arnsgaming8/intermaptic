@@ -54,7 +54,7 @@ export const US_EXTRA_STOPS = [
     facts: [
       { label: 'Artemis II', value: 'Flew around the Moon, April 2026' },
       { label: 'Apollo 11', value: 'Launched here, 1969' },
-      { label: 'Visitors', value: 'About 1.5 million a year' },
+      { label: 'Visitors', value: 'Well over a million a year' },
     ],
     sections: {
       geography:
@@ -69,7 +69,7 @@ export const US_EXTRA_STOPS = [
     comparison: [
       'Both are small places that study very big things. Kennedy flew four people around the Moon in 2026.',
       'Kennedy is on a warm coast in Florida. Churchill sits on cold Hudson Bay in the far north.',
-      'The space center draws about a million and a half visitors a year. Churchill draws far fewer, but people travel there to see polar bears.',
+      'The space center draws well over a million visitors a year. Churchill draws far fewer, but people travel there to see polar bears.',
     ],
     sources: ['NASA, 2026', 'Kennedy Space Center Visitor Complex, 2026'],
   },

@@ -58,7 +58,7 @@ export const PAIRS = [
     subject: 'Government',
     us: 'washington-dc',
     ca: 'ottawa',
-    note: 'Both capitals were built on purpose to keep government away from business.',
+    note: 'Both capitals were picked on purpose to sit between rival regions.',
   },
   {
     id: 'finance',
@@ -90,7 +90,7 @@ export const PAIRS = [
     subject: 'Culture',
     us: 'los-angeles',
     ca: 'montreal',
-    note: 'Both sell their culture worldwide, one in French and one in English and Spanish.',
+    note: 'Both export culture worldwide: Hollywood films from Los Angeles and French-language arts from Montreal.',
   },
   {
     id: 'natural-wonders',
@@ -106,7 +106,7 @@ export const PAIRS = [
     subject: 'Culture',
     us: 'new-orleans',
     ca: 'quebec-city',
-    note: 'Two of the oldest quarters in North America, both with French roots.',
+    note: 'Two historic quarters in North America, both with strong French roots.',
   },
   {
     id: 'border-link',
@@ -114,7 +114,7 @@ export const PAIRS = [
     subject: 'Geography',
     us: 'niagara-falls',
     ca: 'niagara-falls',
-    note: 'The longest border in the world, with one waterfall both countries claim.',
+    note: 'The longest border in the world, with one waterfall both countries share.',
   },
   {
     id: 'carved-rock',
@@ -222,7 +222,7 @@ export const NATIONAL_COMPARISON = {
       },
       {
         label: 'Legislature',
-        value: 'Parliament, with an elected House of Commons and a Senate chosen by government.',
+        value: 'Parliament, with an elected House of Commons and a Senate whose members are appointed.',
       },
       { label: 'Official languages', value: 'English and French are both official.' },
       { label: 'Currency', value: 'The Canadian dollar (CAD)' },
