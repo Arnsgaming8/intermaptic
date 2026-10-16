@@ -54,7 +54,7 @@ export const US_STOPS = [
     pair: 'finance',
     facts: [
       { label: 'Settled', value: '1624, as New Amsterdam' },
-      { label: 'Population', value: 'Almost 9 million in the city' },
+      { label: 'Population', value: 'About 8.6 million in the city' },
       { label: 'Mayor', value: 'Zohran Mamdani, since January 2026' },
     ],
     sections: {
@@ -90,7 +90,7 @@ export const US_STOPS = [
     pair: 'pacific-tech',
     facts: [
       { label: 'Golden Gate Bridge', value: 'Opened 1937' },
-      { label: 'Population', value: '~826,000 in the city, ~7.8 million around it' },
+      { label: 'Population', value: '~826,000 in the city, ~7.7 million around it' },
       { label: 'Mayor', value: 'Daniel Lurie, since January 2025' },
     ],
     sections: {
@@ -125,7 +125,7 @@ export const US_STOPS = [
     pair: 'interior-economy',
     facts: [
       { label: 'Incorporated', value: '1837' },
-      { label: 'Population', value: '~2.75 million in the city, ~9.3 million around it' },
+      { label: 'Population', value: '~2.7 million in the city, ~9.3 million around it' },
       { label: 'Budget gaps', value: 'Hundreds of millions in recent years' },
     ],
     sections: {

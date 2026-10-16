@@ -119,7 +119,7 @@ export const CA_EXTRA_STOPS = [
     tagline: 'The polar bear capital of the world',
     pair: 'looking-up',
     facts: [
-      { label: 'Population', value: 'About 700 people at the 2021 census' },
+      { label: 'Population', value: 'About 800 people' },
       { label: 'Polar bears', value: 'Hundreds gather in autumn' },
       { label: 'Location', value: 'Hudson Bay, northern Manitoba' },
     ],

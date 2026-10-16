@@ -46,13 +46,13 @@ export const CA_STOPS = [
     tagline: 'Bay Street money and the CN Tower',
     pair: 'finance',
     facts: [
-      { label: 'Population', value: '~3.3 million in the city, ~7 million around it' },
+      { label: 'Population', value: '~3.3 million in the city, ~6.2 million across the metro area' },
       { label: 'Landmark', value: 'CN Tower, finished in 1976' },
       { label: 'Role', value: 'Canada’s money centre and capital of Ontario' },
     ],
     sections: {
       geography:
-        'Toronto sits on the north-west shore of Lake Ontario. The lake keeps winters mild, but it also brings heavy snow. The city spreads over a flat plain above the lake. Ravines cut through the city, and many are kept as parkland. Low hills and farmland lie just north of the city. The wider region holds about seven million people. Summers are warm and humid, and thunderstorms are common. Three rivers run through the city, and all of them are fairly small. I used the newest figures I could find.',
+        'Toronto sits on the north-west shore of Lake Ontario. The lake keeps winters mild, but it also brings heavy snow. The city spreads over a flat plain above the lake. Ravines cut through the city, and many are kept as parkland. Low hills and farmland lie just north of the city. The wider region holds about six million people. Summers are warm and humid, and thunderstorms are common. Three rivers run through the city, and all of them are fairly small. I used the newest figures I could find.',
       culture:
         'Toronto is one of the most mixed cities in the world. About half the people living there were born outside Canada. More than one hundred languages are spoken in the city. Chinatown, Little Italy and Little Jamaica are well-known districts. The city has several big museums, including the Royal Ontario Museum. The Toronto International Film Festival runs every September. Hockey, baseball and basketball all have professional teams here. Caribbean Carnival brings a huge street parade each summer.',
       government:
@@ -63,7 +63,7 @@ export const CA_STOPS = [
     comparison: [
       'New York City is a world money centre, where Wall Street sets prices. Toronto is far smaller, and a few big banks run most of it.',
       'Both are the biggest cities in their countries and the main place immigrants arrive. New York has a powerful elected mayor, but a province can change Toronto’s council.',
-      'New York is the centre of an area with about twenty million people. Toronto has about seven million, and mostly sells its culture nearby.',
+      'New York is the centre of an area with about twenty million people. Toronto has about six million, and mostly sells its culture nearby.',
     ],
     sources: [
       'Statistics Canada, 2026',
@@ -81,7 +81,7 @@ export const CA_STOPS = [
     tagline: 'A port city squeezed between mountains and sea',
     pair: 'pacific-tech',
     facts: [
-      { label: 'Population', value: '~700,000 in the city, ~3 million around it' },
+      { label: 'Population', value: '~700,000 in the city, ~2.6 million across the metro area' },
       { label: 'Landmark', value: 'Canada Place, built for Expo 86' },
       { label: 'Role', value: 'Largest port on Canada’s west coast' },
     ],
@@ -116,7 +116,7 @@ export const CA_STOPS = [
     tagline: 'Home base for Canada’s oil and gas companies',
     pair: 'interior-economy',
     facts: [
-      { label: 'Population', value: '~1.4 million in the city, near 2 million around it' },
+      { label: 'Population', value: '~1.6 million in the city, about 1.7 million across the metro area' },
       { label: 'Landmark', value: 'Calgary Tower, finished in 1968' },
       { label: 'Role', value: 'Where Canada’s oil and gas companies are based' },
     ],
@@ -157,7 +157,7 @@ export const CA_STOPS = [
     ],
     sections: {
       geography:
-        'Montreal sits on an island in the St. Lawrence River. Ships travel up the river from the Atlantic to the Great Lakes. A hill in the middle of the city is called Mount Royal. The river narrows and speeds up beside the island. Winters are cold and snowy, and the snow stays for months. Summers are warm and humid, and sometimes very hot. An underground network of tunnels links buildings in winter. The island is about fifty kilometres long and holds about 1.8 million people. I used the newest figures I could find.',
+        'Montreal sits on an island in the St. Lawrence River. Ships travel up the river from the Atlantic to the Great Lakes. A hill in the middle of the city is called Mount Royal. The river narrows and speeds up beside the island. Winters are cold and snowy, and the snow stays for months. Summers are warm and humid, and sometimes very hot. An underground network of tunnels links buildings in winter. The island is about fifty kilometres long and holds most of the city’s residents. I used the newest figures I could find.',
       culture:
         'Montreal is the centre of French-language culture in North America. It hosts a big jazz festival and a comedy festival. French is the everyday language for many residents. The city has several universities, teaching in both French and English. Old Montreal has stone buildings from the French and British periods. The city is famous for bagels, smoked meat and sugar pies. Hockey is followed closely, and the Canadiens are the local team. Street art and small music venues are common in the Plateau.',
       government:
