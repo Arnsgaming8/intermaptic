@@ -36,7 +36,7 @@ export const US_EXTRA_STOPS = [
     },
     comparison: [
       'Mount Rushmore is famous for what people carved into it. Gros Morne is famous for billion-year-old rock the Earth pushed up.',
-      'The faces at Mount Rushmore were carved on purpose. The Tablelands at Gros Morne are pieces of ocean floor pushed up onto land.',
+      'The faces at Mount Rushmore were carved on purpose. The Tablelands at Gros Morne are rock pushed up from deep inside the Earth.',
       'Mount Rushmore sits in the middle of the country, far from any coast. Gros Morne sits on the Atlantic coast of Newfoundland.',
     ],
     sources: ['National Park Service, 2026', 'South Dakota Department of Tourism, 2026'],

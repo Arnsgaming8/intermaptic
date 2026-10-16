@@ -227,7 +227,7 @@ export const CA_STOPS = [
     ],
     sections: {
       geography:
-        'Quebec City sits where the St. Lawrence River narrows to about a kilometre. It is the oldest walled city north of Mexico. The city stands on a high rock above the river. The upper town sits on the cliff, and the lower town sits by the water. Winters here are long, cold and snowy. The river freezes in places, and ice blocks the current. About 560,000 people live in the city today. The old walls still stand around the historic part. I used the newest figures I could find.',
+        'Quebec City sits where the St. Lawrence River narrows to about a kilometre. It is the oldest walled city north of Mexico. The city stands on a high rock above the river. The upper town sits on the cliff, and the lower town sits by the water. Winters here are long, cold and snowy. The river freezes in places, and ice blocks the current. More than half a million people live in the city today. The old walls still stand around the historic part. I used the newest figures I could find.',
       culture:
         'Quebec City is the heart of French culture in North America. Old Quebec has the Château Frontenac and cobbled streets. Most people speak French, and many speak little English. The winter carnival brings ice palaces and a canoe race. A huge ice hotel is built each winter outside the city. The city has a university founded in 1663. Restaurants here are known for maple, cheese and fresh bread. Music and theatre fill the summer evenings.',
       government:

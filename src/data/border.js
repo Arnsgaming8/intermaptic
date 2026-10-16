@@ -95,6 +95,6 @@ export const BORDER_FACTS = [
   },
   {
     label: 'Tariff fight',
-    value: 'The United States taxes many Canadian goods at 25 per cent. Goods covered by the USMCA trade deal are exempt.',
+    value: 'The U.S. set 50 per cent tariffs on C$27.6 billion of goods in August 2026. Canada replied in September with 15, 25 and 50 per cent tariffs.',
   },
 ]

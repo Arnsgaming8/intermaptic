@@ -89,7 +89,7 @@ export const CA_EXTRA_STOPS = [
     facts: [
       { label: 'Park created', value: '1973, on the west coast of Newfoundland' },
       { label: 'World Heritage', value: 'Listed by UNESCO in 1987' },
-      { label: 'Visitors', value: 'About 250,000 a year' },
+      { label: 'Visitors', value: 'Fewer than 250,000 a year' },
     ],
     sections: {
       geography:
