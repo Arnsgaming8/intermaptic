@@ -23,17 +23,17 @@ export const CA_EXTRA_STOPS = [
     tagline: 'The highest tides in the world',
     pair: 'rivers-and-tides',
     facts: [
-      { label: 'Tide range', value: 'Up to about 16 metres' },
-      { label: 'Water moved', value: 'Over 100 billion tonnes, twice a day' },
+      { label: 'Tide range', value: 'Up to about 52 feet' },
+      { label: 'Water moved', value: 'Over 100 billion tons, twice a day' },
       { label: 'Tide cycle', value: 'About 12 hours and 25 minutes' },
     ],
     sections: {
       geography:
-        'The Bay of Fundy is a long inlet between New Brunswick and Nova Scotia. It has the highest tides in the world. At their peak, the tides rise about 16 metres. The bay reaches about 250 kilometres inland from the Atlantic. Its shape narrows at the top, so the tide piles up. Over 100 billion tonnes of water move in and out twice a day. Red sandstone cliffs line the shore. Summers here stay cool and foggy.',
+        'The Bay of Fundy is a long inlet between New Brunswick and Nova Scotia. It has the highest tides in the world. At their peak, the tides rise about 52 feet. The bay reaches about 155 miles inland from the Atlantic. Its shape narrows at the top, so the tide piles up. Over 100 billion tons of water move in and out twice a day. Red sandstone cliffs line the shore. Summers here stay cool and foggy.',
       culture:
         'When the tide goes out, people can walk on the ocean floor. At Hopewell Rocks, kayakers paddle the tidal bore between stone pillars. The Mi’kmaq and Maliseet peoples have lived around the bay for thousands of years. Towns on both shores hold festivals. Many serve lobster suppers. The plate arrives with boiled lobster, melted butter and plenty of talk. Fundy National Park has trails, a campground and summer events. Artists paint the red cliffs, and small galleries line the shore. Fishing families have worked these shores for generations.',
       government:
-        'Two provinces make the rules here, Nova Scotia and New Brunswick. Each province has its own legislature. Each has a premier. Tidal energy projects need permits from the province and from Ottawa. The federal government looks after fisheries. Fishing rules set the seasons, the licences and the size of each catch. Canada and the United States share some fish stocks and set limits. Parks Canada runs Fundy National Park for the whole country. New Brunswick runs the Hopewell Rocks park and its trails.',
+        'Two provinces make the rules here, Nova Scotia and New Brunswick. Each province has its own legislature. Each has a premier. Tidal energy projects need permits from the province and from Ottawa. The federal government looks after fisheries. Fishing rules set the seasons, the licenses and the size of each catch. Canada and the United States share some fish stocks and set limits. Parks Canada runs Fundy National Park for the whole country. New Brunswick runs the Hopewell Rocks park and its trails.',
       economy:
         'Fishing is the main work here, and boats catch lobster, scallops and herring. The Annapolis Royal station has run since 1984. It was one of the first tidal plants in the world. Lobster brings in the most money of any catch. Farming, forestry and tourism also give people work along the shore. The port of Saint John ships oil, paper and goods across the Atlantic. Tidal power is still a new idea here. The projects stay small. Tourists come for the tides. Homes cost less here than in Toronto, though wages are lower too.',
     },
@@ -67,7 +67,7 @@ export const CA_EXTRA_STOPS = [
       government:
         'Iqaluit is the capital of Nunavut, a territory created in 1999. The Legislative Assembly makes the laws. Inuit groups help manage the land. Land claims give them a say in what happens. Nunavut sends one member of Parliament to Ottawa. The territory is huge, and building homes costs far more than in the south. Voters also pick a mayor and councillors for the city. Schools teach in Inuktitut in the early years and English later on. The hospital is small, so some patients fly south for care.',
       economy:
-        'Government jobs lead the way here. Food and fuel cost a lot. Almost everything gets flown or shipped in. Mining brings some money to the region. A litre of milk can cost a lot more than it does in the south. Housing is in short supply, and many families live in crowded homes. Fishing for char and sealing still bring in some income. Tourists come to see the north and the northern lights. An iron mine on Baffin Island ships ore out by sea. Hunters and artisans sell carvings that buyers ship around the world.',
+        'Government jobs lead the way here. Food and fuel cost a lot. Almost everything gets flown or shipped in. Mining brings some money to the region. A gallon of milk can cost a lot more than it does in the south. Housing is in short supply, and many families live in crowded homes. Fishing for char and sealing still bring in some income. Tourists come to see the north and the northern lights. An iron mine on Baffin Island ships ore out by sea. Hunters and artisans sell carvings that buyers ship around the world.',
     },
     comparison: [
       'Both places sit far north with few people. Denali is one tall mountain, while Iqaluit is a town that runs its own government.',
@@ -93,9 +93,9 @@ export const CA_EXTRA_STOPS = [
     ],
     sections: {
       geography:
-        'Gros Morne became a national park in 1973, on the west coast of Newfoundland. The Tablelands are orange-brown rock pushed up from deep inside the Earth. The park covers about 1,800 square kilometres of coast, mountains and water. The Long Range Mountains run along the coast with steep slopes. Western Brook Pond is a deep lake set between tall rock walls. The Tablelands hold rock from the mantle, which is rare at the surface. Ice sheets once covered the island and carved the land. Fog and rain are common. The ocean sits close by.',
+        'Gros Morne became a national park in 1973, on the west coast of Newfoundland. The Tablelands are orange-brown rock pushed up from deep inside the Earth. The park covers about 700 square miles of coast, mountains and water. The Long Range Mountains run along the coast with steep slopes. Western Brook Pond is a deep lake set between tall rock walls. The Tablelands hold rock from the mantle, which is rare at the surface. Ice sheets once covered the island and carved the land. Fog and rain are common. The ocean sits close by.',
       culture:
-        'Fishing villages near the park were settled by families from England, Ireland and France. The park became a UNESCO World Heritage Site in 1987. People here speak English with a strong Newfoundland accent. Music and stories fill kitchen parties. Indigenous peoples have lived on this island for thousands of years. Hikers reach the Tablelands by trail from the park’s visitor centre. Cod fishing shaped these towns for hundreds of years. Then the fishery closed. Artists and writers come here to work in the quiet coastal villages.',
+        'Fishing villages near the park were settled by families from England, Ireland and France. The park became a UNESCO World Heritage Site in 1987. People here speak English with a strong Newfoundland accent. Music and stories fill kitchen parties. Indigenous peoples have lived on this island for thousands of years. Hikers reach the Tablelands by trail from the park’s visitor center. Cod fishing shaped these towns for hundreds of years. Then the fishery closed. Artists and writers come here to work in the quiet coastal villages.',
       government:
         'Parks Canada runs the park, and the federal government owns the land there. The province looks after roads. It handles schools and health care too. Newfoundland and Labrador has its own legislature in St. John’s. The park has a management plan that local people help review. Small towns in the area elect their own councils and their own mayors. The federal government sets fishing rules for the whole coast. Mining and oil projects need permits from the province. Indigenous groups take part in talks about land and wildlife.',
       economy:
@@ -129,7 +129,7 @@ export const CA_EXTRA_STOPS = [
       culture:
         'Churchill is known as the polar bear capital. Hundreds of bears turn up in autumn. Inuit, Cree and Métis families have long ties to this part of the coast. Whales visit in summer, and beluga tours run on the river. Sled dogs and snowmobiles both get used in winter. The town has a small museum of Inuit carvings. Bird watchers come in spring to see many different kinds of birds. Residents learn to stay clear of bears. They keep their food locked up.',
       government:
-        'Churchill runs its own town council, led by an elected mayor. The province makes laws about hunting and land. The province runs a bear patrol. Manitoba has its own legislature. It sits in Winnipeg. The port is owned by a group made up of many First Nations. The town gets help from the province for local services. Wildlife officers move bears away from the streets each autumn. Parks Canada looks after Wapusk National Park nearby. Community groups and Indigenous organisations join talks about wildlife.',
+        'Churchill runs its own town council, led by an elected mayor. The province makes laws about hunting and land. The province runs a bear patrol. Manitoba has its own legislature. It sits in Winnipeg. The port is owned by a group made up of many First Nations. The town gets help from the province for local services. Wildlife officers move bears away from the streets each autumn. Parks Canada looks after Wapusk National Park nearby. Community groups and Indigenous organizations join talks about wildlife.',
       economy:
         'Churchill is a grain port. Wheat from the prairies gets loaded onto ships that sail out of the bay. A rocket range ran here from the 1950s through to the 1980s. The port has closed and reopened in recent years. Trains from Winnipeg bring visitors and supplies to the town. Tourism brings work for guides, hotels and drivers. Fishing for char and hunting support some families. Food and fuel cost more here than in southern cities. About 800 people live here. Jobs get shared among families.',
     },

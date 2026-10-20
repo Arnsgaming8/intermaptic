@@ -66,7 +66,7 @@ export const PAIRS = [
     subject: 'Economy',
     us: 'new-york-city',
     ca: 'toronto',
-    note: 'Both are the banking centre of their country and a landing spot for newcomers.',
+    note: 'Both are the banking center of their country and a landing spot for newcomers.',
   },
   {
     id: 'pacific-tech',
@@ -74,7 +74,7 @@ export const PAIRS = [
     subject: 'Economy',
     us: 'san-francisco',
     ca: 'vancouver',
-    note: 'Two technology centres on the Pacific coast, both grown up from ports and universities.',
+    note: 'Two technology centers on the Pacific coast, both grown up from ports and universities.',
   },
   {
     id: 'interior-economy',
@@ -184,7 +184,7 @@ export const NATIONAL_COMPARISON = {
     rows: [
       { label: 'Capital', value: 'Washington, D.C.' },
       { label: 'Population', value: '~343 million' },
-      { label: 'Land area', value: '9.15 million km²' },
+      { label: 'Land area', value: '3.53 million square miles' },
       { label: 'GDP (nominal)', value: '~$32.4 trillion' },
       { label: 'GDP per capita', value: '~$94,000' },
       { label: 'Government', value: 'A federal republic. Voters elect the president.' },
@@ -192,7 +192,7 @@ export const NATIONAL_COMPARISON = {
       { label: 'Legislature', value: 'Congress: 100 senators and 435 representatives.' },
       { label: 'Official languages', value: 'No official language. Most people speak English.' },
       { label: 'Currency', value: 'The US dollar (USD)' },
-      { label: 'Highest point', value: 'Denali, which many still call Mount McKinley, at 6,190 m.' },
+      { label: 'Highest point', value: 'Denali, which many still call Mount McKinley, at 20,310 ft.' },
       {
         label: 'Time zones',
         value: 'Four in the main states. Nine with Alaska, Hawaii and the territories.',
@@ -209,7 +209,7 @@ export const NATIONAL_COMPARISON = {
     rows: [
       { label: 'Capital', value: 'Ottawa, Ontario' },
       { label: 'Population', value: '~41.8 million' },
-      { label: 'Land area', value: '9.09 million km²' },
+      { label: 'Land area', value: '3.51 million square miles' },
       { label: 'GDP (nominal)', value: '~$2.5 trillion' },
       { label: 'GDP per capita', value: '~$60,300' },
       {
@@ -226,7 +226,7 @@ export const NATIONAL_COMPARISON = {
       },
       { label: 'Official languages', value: 'Both English and French hold official status.' },
       { label: 'Currency', value: 'The Canadian dollar (CAD)' },
-      { label: 'Highest point', value: 'Mount Logan, up in Yukon, at 5,959 m.' },
+      { label: 'Highest point', value: 'Mount Logan, up in Yukon, at 19,551 ft.' },
       { label: 'Time zones', value: '6' },
       {
         label: 'Health system',
@@ -238,7 +238,7 @@ export const NATIONAL_COMPARISON = {
   shared: [
     {
       label: 'Border length',
-      value: 'At 8,891 km, the longest border between two countries on Earth.',
+      value: 'At 5,525 miles, the longest border between two countries on Earth.',
     },
     {
       label: 'Border since',

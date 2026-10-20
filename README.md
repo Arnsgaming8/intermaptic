@@ -192,7 +192,7 @@ scripts/
 src/
   main.jsx  App.jsx        entry + shell (intro, overlays, Escape handling)
   state/AtlasContext.jsx   all shared state: selection, hover, filters, layers, API load
-  lib/theme.js             design tokens, nation colours, model tuning
+  lib/theme.js             design tokens, nation colors, model tuning
   lib/geo.js               lat/lng -> Vector3, surface orientation, great circles
   lib/api.js               the API client, with the bundled fallback and the wake ping
   lib/device.js            performance tier for iPads and other touch devices
@@ -225,7 +225,7 @@ Models are built in their own unit space. The base sits at local `y = 0` and `+Y
 
 ### Keeping a crowded hemisphere easy to read
 
-All twenty-three landmarks sit inside one continent. Washington and New York are a few hundred kilometres apart. On a globe of this radius, that is barely the width of one model. Left alone, the field looks like a pile. Three things in `src/scene/` keep it clear:
+All twenty-three landmarks sit inside one continent. Washington and New York are a few hundred miles apart. On a globe of this radius, that is barely the width of one model. Left alone, the field looks like a pile. Three things in `src/scene/` keep it clear:
 
 - **Labels fade out.** Every name plate is turned into screen space once per frame. Then the plates are sorted and given room one at a time. Focused and hovered ones come first, then the ones nearest the camera. Anything that would bump into something else is dropped. In practice only eight to ten of the twenty-three names stay at full-globe range. Note that drei renders `<Html>` children into a separate React root. So R3F hooks are not available inside a label. The declutter loop therefore lives in the Canvas tree. It reaches each DOM label through a ref.
 - **Models shrink when you are far away.** `Landmarks.jsx` eases each model as the camera comes in. It grows from `farScale` at full-globe range to full size, using the numbers in `MODEL_TUNING`. The wide view shows small, separate monuments. Flying to a stop brings it up to full detail.
@@ -268,7 +268,7 @@ Then look at it in the gallery:
 npm run dev
 # http://localhost:5173/gallery.html          all twenty-three models in a grid
 # http://localhost:5173/gallery.html?elev=38  raised camera, to judge flat features
-# http://localhost:5173/gallery.html?only=cn-tower   one model, large and centred
+# http://localhost:5173/gallery.html?only=cn-tower   one model, large and centered
 ```
 
 > When you tune a model, remember that the globe hides its far side. A landmark is most often seen from **directly above**. So roofs and top-down patterns matter as much as the outline. That is why the Grand Canyon's gorge and the Willis Tower's stepped roof plan are built the way they are.
@@ -295,9 +295,9 @@ npm run dev
 ## Known limitations
 
 - The boundary ribbon and the stop coordinates are simplified. They are chosen to look right at globe scale, and they are not survey-grade.
-- Landmark models are stylised, recognisable outlines, not surveyed copies.
-- The national comparison figures are rounded 2024 estimates. They come from the IMF, the World Bank and national statistics offices. The UI labels them as approximate.
-- The 6th grade rules are measured on sentence length and a word list. That is a good guess at how easy text is to read. It is not a replacement for a teacher's judgement.
+- Landmark models are stylized, recognizable outlines, not surveyed copies.
+- The national comparison figures are rounded 2026 estimates. They come from the IMF, Statistics Canada, the U.S. Census Bureau and national statistics offices. The UI labels them as approximate.
+- The 6th grade rules are measured on sentence length and a word list.
 - The API is read-only public data. There are no accounts and no writes. There is no rate limiting beyond the host's edge caching.
 - The free Render instance sleeps when it is idle. So the first visit after a quiet spell shows the built-in atlas. About half a minute later, the live one takes over.
 

@@ -48,7 +48,7 @@ export const CA_STOPS = [
     facts: [
       { label: 'Population', value: '~3.3 million in the city, ~6.2 million across the metro area' },
       { label: 'Landmark', value: 'CN Tower, finished in 1976' },
-      { label: 'Role', value: 'Canada’s money centre and capital of Ontario' },
+      { label: 'Role', value: 'Canada’s money center and capital of Ontario' },
     ],
     sections: {
       geography:
@@ -61,7 +61,7 @@ export const CA_STOPS = [
         'Bay Street holds Canada’s money business. Most of the biggest banks in Canada keep their head offices here. The Toronto Stock Exchange is the main market in the country. Film and television production is a large industry in the city. Technology, insurance and health research employ many people too. The wider Toronto region produces a large share of the country’s output. Housing costs worry a lot of families. Pearson Airport is the busiest airport in Canada.',
     },
     comparison: [
-      'New York is a world money centre, where Wall Street sets prices. Toronto is far smaller, and a few big banks run the show.',
+      'New York is a world financial center, where Wall Street sets prices. Toronto is far smaller, and a few big banks run the show.',
       'Both are the biggest cities in their countries and the main place newcomers land. New York elects a powerful mayor, but a province can reshape Toronto’s council.',
       'New York anchors an area of about twenty million people. Toronto has about six million, and mostly sells its culture next door.',
     ],
@@ -87,9 +87,9 @@ export const CA_STOPS = [
     ],
     sections: {
       geography:
-        'Vancouver sits on a peninsula in the Salish Sea. The Coast Mountains rise almost straight up out of the water there. The city is on the mainland. False Creek cuts into it. The Fraser River carries fresh water into the sea south of the city. Douglas firs and cedars grow thickly on the nearby slopes. The border with the United States lies close by. Winters stay mild, so snow is rare near the water. Winter rain is common, and the city often looks grey.',
+        'Vancouver sits on a peninsula in the Salish Sea. The Coast Mountains rise almost straight up out of the water there. The city is on the mainland. False Creek cuts into it. The Fraser River carries fresh water into the sea south of the city. Douglas firs and cedars grow thickly on the nearby slopes. The border with the United States lies close by. Winters stay mild, so snow is rare near the water. Winter rain is common, and the city often looks gray.',
       culture:
-        'Vancouver is known for the outdoors and for Stanley Park. Canada Place, with its white sails, was built for Expo 86. About half of the people living here were born outside the country. The Chinese and South Asian communities are large. Granville Island holds a public market and small theatres. The city is a centre for film and television production in Canada. Hockey draws big crowds here. So does soccer. People hike, ski and sail within an hour of downtown.',
+        'Vancouver is known for the outdoors and for Stanley Park. Canada Place, with its white sails, was built for Expo 86. About half of the people living here were born outside the country. The Chinese and South Asian communities are large. Granville Island holds a public market and small theaters. The city is a center for film and television production in Canada. Hockey draws big crowds here. So does soccer. People hike, ski and sail within an hour of downtown.',
       government:
         'Vancouver is not the capital of British Columbia. Victoria holds that job. Victoria sits on Vancouver Island. A mayor runs the city. Ten councillors work with the mayor. The city also elects park and school board members. The province decides most of the rules about housing and about transit. Metro Vancouver handles the water, the sewers and the regional parks. More than twenty separate cities make up the region. Vancouver picks its mayor and council in October 2026.',
       economy:
@@ -122,11 +122,11 @@ export const CA_STOPS = [
     ],
     sections: {
       geography:
-        'Calgary sits where the Bow and the Elbow rivers come together. The Rocky Mountains sit about an hour’s drive from town. The land around the city is open grassland. People call it prairie. The mountains lie west, close enough to see. Winters bring cold snaps. Then a warm wind called a chinook can push the temperature up in minutes. The city sits more than a thousand metres above the level of the sea. Hailstorms and floods have hit the city in summer.',
+        'Calgary sits where the Bow and the Elbow rivers come together. The Rocky Mountains sit about an hour’s drive from town. The land around the city is open grassland. People call it prairie. The mountains lie west, close enough to see. Winters bring cold snaps. Then a warm wind called a chinook can push the temperature up in minutes. The city sits more than 3,300 feet above sea level. Hailstorms and floods have hit the city in summer.',
       culture:
         'Calgary is a young city, and people keep moving here. Every July the city holds the Calgary Stampede, a rodeo that started in 1912. The Stampede runs for ten days and draws more than a million visitors. White cowboy hats show up all over downtown in July. The city has a large arena. Hockey has a strong following here. Several universities and colleges sit near the river. Newcomers arrive from other provinces and from other countries. Music and food festivals run through the summer.',
       government:
-        'Calgary is run by a mayor plus a council elected by neighbourhood. The province’s law-making body sits in Edmonton, not here. Calgary has fourteen wards, and each one of them chooses a councillor. The city runs transit, water and emergency services. The province sets the rules for oil, gas and pipelines. Alberta has no provincial sales tax. So the city leans on property tax. City elections come every four years. Jeromy Farkas was elected as mayor of Calgary in October 2025.',
+        'Calgary is run by a mayor plus a council elected by neighborhood. The province’s law-making body sits in Edmonton, not here. Calgary has fourteen wards, and each one of them chooses a councillor. The city runs transit, water and emergency services. The province sets the rules for oil, gas and pipelines. Alberta has no provincial sales tax. So the city leans on property tax. City elections come every four years. Jeromy Farkas was elected as mayor of Calgary in October 2025.',
       economy:
         'Calgary is where Canada’s big energy companies keep their main offices. Hundreds of engineering and drilling firms work here. Banking serves the energy business. So does insurance. Trucking and rail links carry equipment out to the oilfields. Ranching and farming are common on the land all around the city. Oil prices make the economy jump up and down. Incomes run high here. Jobs can vanish when oil prices fall. Downtown has plenty of offices and very few homes.',
     },
@@ -157,9 +157,9 @@ export const CA_STOPS = [
     ],
     sections: {
       geography:
-        'Montreal sits on an island in the St. Lawrence River. Ships travel up the river from the Atlantic to the Great Lakes. The hill in the middle of the city goes by the name Mount Royal. The river narrows and speeds up beside the island. Winters are cold here. Snow sticks around for months. Summers come warm and humid, and sometimes very hot. Tunnels under the city link buildings in winter. The island runs about fifty kilometres long. Most of the city’s residents live on it.',
+        'Montreal sits on an island in the St. Lawrence River. Ships travel up the river from the Atlantic to the Great Lakes. The hill in the middle of the city goes by the name Mount Royal. The river narrows and speeds up beside the island. Winters are cold here. Snow sticks around for months. Summers come warm and humid, and sometimes very hot. Tunnels under the city link buildings in winter. The island runs about 31 miles long. Most of the city’s residents live on it.',
       culture:
-        'Montreal is the centre of French-language culture in all of North America. The city hosts a big jazz festival and a comedy festival. French is the everyday language for many residents. Several universities teach in both French and English. Old Montreal is full of stone buildings from the French and British periods. The city is famous for bagels, smoked meat and sugar pies. Hockey is followed closely here. The Canadiens are the local team. Street art and small music venues fill the Plateau.',
+        'Montreal is the center of French-language culture in all of North America. The city hosts a big jazz festival and a comedy festival. French is the everyday language for many residents. Several universities teach in both French and English. Old Montreal is full of stone buildings from the French and British periods. The city is famous for bagels, smoked meat and sugar pies. Hockey is followed closely here. The Canadiens are the local team. Street art and small music venues fill the Plateau.',
       government:
         'Montreal is the biggest city in Quebec, but it is not the capital. Soraya Martinez Ferrada became mayor in November 2025. Nineteen borough councils run local services. That setup is unusual in Canada. The mayor is elected by the whole city. Quebec’s law-making body sits in Quebec City. The province of Quebec sets the rules about language, schools and health care. Boroughs decide local matters such as parking and parks. City elections happen every four years.',
       economy:
@@ -168,7 +168,7 @@ export const CA_STOPS = [
     comparison: [
       'Los Angeles sells more film and television around the world than anywhere else. Montreal makes films and video games too, mostly for people who speak French.',
       'Both cities have many immigrants and a big second language. Montreal’s language rules are provincial law, and they cover signs, schools and public services.',
-      'Los Angeles is dozens of cities with no single centre. Montreal is a crowded island run by one city hall and nineteen borough councils.',
+      'Los Angeles is dozens of cities with no single center. Montreal is a crowded island run by one city hall and nineteen borough councils.',
     ],
     sources: [
       'Statistics Canada, 2026',
@@ -192,7 +192,7 @@ export const CA_STOPS = [
     ],
     sections: {
       geography:
-        'Banff sits in the Bow River valley, high up in the Rocky Mountains. Long ago, slow sheets of ice carved out the valleys and the lakes. The park covers more than six thousand square kilometres. Lake Louise is fed by meltwater from the glacier above it. Rock flour in the water makes the lakes look blue-green. Winter lasts from November into April up in the high country. Elk, bears and bighorn sheep live in the park. Wolves live here too. Forest fires shape this mountain landscape. They are a natural part of it.',
+        'Banff sits in the Bow River valley, high up in the Rocky Mountains. Long ago, slow sheets of ice carved out the valleys and the lakes. The park covers more than 2,300 square miles. Lake Louise is fed by meltwater from the glacier above it. Rock flour in the water makes the lakes look blue-green. Winter lasts from November into April up in the high country. Elk, bears and bighorn sheep live in the park. Wolves live here too. Forest fires shape this mountain landscape. They are a natural part of it.',
       culture:
         'The town lives off visitors. Millions of people visit the park each year. Around eight thousand people live in the town all year. Park rules limit how many people are allowed to live in the town. Hiking, skiing and canoeing are the main activities. Grand old railway hotels stand in the town and beside Lake Louise. Visitors come from around the world to hike the trails. Rail tourists arrived in the 1880s. Hotels were built for them.',
       government:
@@ -227,9 +227,9 @@ export const CA_STOPS = [
     ],
     sections: {
       geography:
-        'Quebec City sits where the St. Lawrence River narrows to about a kilometre. It is the oldest walled city north of Mexico. The city stands on a high rock that rises above the river. The upper town sits on the cliff. The lower town sits by the water. Winters run long and cold. Snow piles up. The river freezes in places, and ice blocks the current. More than half a million people live in the city today. The old walls still stand around the historic part.',
+        'Quebec City sits where the St. Lawrence River narrows to about half a mile. It is the oldest walled city north of Mexico. The city stands on a high rock that rises above the river. The upper town sits on the cliff. The lower town sits by the water. Winters run long and cold. Snow piles up. The river freezes in places, and ice blocks the current. More than half a million people live in the city today. The old walls still stand around the historic part.',
       culture:
-        'Quebec City is the heart of French culture in all of North America. Old Quebec has the Château Frontenac and cobbled streets. Most people speak French here. Many speak little English. The winter carnival brings ice palaces and a canoe race. A huge ice hotel is built just outside the city each winter. The city has a university founded in 1663. Restaurants here are known for maple, cheese and fresh bread. Music and theatre fill the summer evenings.',
+        'Quebec City is the heart of French culture in all of North America. Old Quebec has the Château Frontenac and cobbled streets. Most people speak French here. Many speak little English. The winter carnival brings ice palaces and a canoe race. A huge ice hotel is built just outside the city each winter. The city has a university founded in 1663. Restaurants here are known for maple, cheese and fresh bread. Music and theater fill the summer evenings.',
       government:
         'Quebec City is the capital of Quebec. The National Assembly meets here, with 125 elected members. Quebec votes for its National Assembly in October 2026. Bruno Marchand was re-elected mayor in November 2025. The province runs the schools, the hospitals and most of the roads. Voters here elect both their city councillors and their provincial members. The city handles water, parks and garbage. Taxes come from property. More money comes from the province. The federal government adds its share.',
       economy:

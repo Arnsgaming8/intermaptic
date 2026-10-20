@@ -7,7 +7,7 @@ import { useAtlas } from '../state/AtlasContext.jsx'
 /**
  * When a stop is selected, arc it to the city it is being compared against.
  * The pair is the whole point of Intermaptic, so the link is drawn even though the
- * two stops are usually a thousand kilometres apart.
+ * two stops are usually a thousand miles apart.
  */
 export default function CompareLink() {
   const { selectedStop, counterpart, showLink } = useAtlas()

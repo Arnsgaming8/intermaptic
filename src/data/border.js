@@ -82,7 +82,7 @@ export const BORDER_WAYPOINTS = BORDER_SEGMENTS.flatMap((segment) => segment.poi
  * entered a tariff fight in 2025, so the trade entries below carry the 2026 position.
  */
 export const BORDER_FACTS = [
-  { label: 'Total length', value: '8,891 km long, counting Alaska' },
+  { label: 'Total length', value: '5,525 miles long, counting Alaska' },
   { label: 'Rank', value: 'The longest border in the world between two countries' },
   { label: 'Guarded by armies', value: 'Largely unguarded, with no wall along most of its length' },
   {
@@ -95,6 +95,6 @@ export const BORDER_FACTS = [
   },
   {
     label: 'Tariff fight',
-    value: 'In August 2026 the U.S. set 50 per cent tariffs on C$27.6 billion of goods. Canada hit back in September with tariffs of 15, 25 and 50 per cent.',
+    value: 'In August 2026 the U.S. set 50 percent tariffs on C$27.6 billion of goods. Canada hit back in September with tariffs of 15, 25 and 50 percent.',
   },
 ]

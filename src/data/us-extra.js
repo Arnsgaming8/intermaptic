@@ -84,19 +84,19 @@ export const US_EXTRA_STOPS = [
     tagline: 'The tallest mountain in North America',
     pair: 'northern-edge',
     facts: [
-      { label: 'Height', value: 'About 6,190 m' },
+      { label: 'Height', value: 'About 20,310 ft' },
       { label: 'Federal name', value: 'Mount McKinley, changed back in 2025' },
       { label: 'Local name', value: 'Denali, used in Alaska' },
     ],
     sections: {
       geography:
-        'Denali is the highest mountain in North America, at about 6,190 metres up. Winter temperatures near the top fall far below freezing. The peak rises out of a wide valley of rivers and gravel bars. Snow and ice cover much of the summit all year. One road runs into the park. It stops far from the top. Two plates meet beneath Alaska, so earthquakes shake the region. Summer days are so long that the sky stays light after midnight. The park covers millions of acres of wild land.',
+        'Denali is the highest mountain in North America, at about 20,310 feet up. Winter temperatures near the top fall far below freezing. The peak rises out of a wide valley of rivers and gravel bars. Snow and ice cover much of the summit all year. One road runs into the park. It stops far from the top. Two plates meet beneath Alaska, so earthquakes shake the region. Summer days are so long that the sky stays light after midnight. The park covers millions of acres of wild land.',
       culture:
         'Athabaskan people have lived here for thousands of years. They call the mountain Denali, and the name means the high one. For years it was Mount McKinley. The official name changed to Denali in 2015. In January 2025 the federal government changed it back. Many Alaskans still say Denali. Climbers come from many countries every summer to try for the top. Local Athabaskan groups keep their language and traditions alive.',
       government:
         'The park was created back in 1917. The federal government runs it. A law passed in 1971 created Alaska Native corporations. The National Park Service sets the rules for visiting the park. The park keeps the name Denali, even though the peak was renamed. Alaska lawmakers have asked for the name Denali to be restored. Only a few buses are allowed on the single park road each day. The state of Alaska manages fish and game across the region. Federal and state agencies share the job of keeping people safe.',
       economy:
-        'Visitors bring in much of the money here. Buses carry tourists along the single road that runs into the park. Guides lead climbing trips. Shops rent out cold-weather gear. Hotels and lodges open for the short summer. Many workers pack up and leave when the season ends in September. Fishing and hunting bring money to small communities. Roadhouses along the highway serve travellers and truck drivers. The summer season lasts only a few months.',
+        'Visitors bring in much of the money here. Buses carry tourists along the single road that runs into the park. Guides lead climbing trips. Shops rent out cold-weather gear. Hotels and lodges open for the short summer. Many workers pack up and leave when the season ends in September. Fishing and hunting bring money to small communities. Roadhouses along the highway serve travelers and truck drivers. The summer season lasts only a few months.',
     },
     comparison: [
       'Denali is a mountain with no towns and no road to the top. Iqaluit is a small Arctic capital where families live all year.',
@@ -117,7 +117,7 @@ export const US_EXTRA_STOPS = [
     pair: 'rivers-and-tides',
     facts: [
       { label: 'Built', value: '1931 to 1936' },
-      { label: 'Height', value: 'About 221 m' },
+      { label: 'Height', value: 'About 725 ft' },
       { label: 'Lake Mead', value: 'Lowest level on record, August 2026' },
     ],
     sections: {

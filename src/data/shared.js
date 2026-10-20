@@ -34,15 +34,15 @@ export const SHARED_STOPS = [
     tagline: 'A waterfall two countries share',
     pair: 'border-link',
     facts: [
-      { label: 'How far it falls', value: '51–57 m' },
-      { label: 'Water flow', value: 'About 2,400 m³ a second on average' },
+      { label: 'How far it falls', value: '167–187 ft' },
+      { label: 'Water flow', value: 'About 85,000 cubic feet a second on average' },
       { label: 'Age', value: '~12,000 years' },
     ],
     sections: {
       geography:
-        'Niagara Falls sits on the Niagara River, between Ontario and New York State. Nine parts in ten of the water goes over Horseshoe Falls. Horseshoe Falls is on the Canadian side. The river runs about fifty-eight kilometres north, from Lake Erie to Lake Ontario. Three waterfalls make up the falls. Horseshoe is the widest. The other two are American Falls and Bridal Veil Falls, on the American side. The falls mark the start of a gorge about eleven kilometres long. Hard rock sits on top of a softer layer of shale. Water wears that soft layer away, so the falls creep upstream.',
+        'Niagara Falls sits on the Niagara River, between Ontario and New York State. Nine parts in ten of the water goes over Horseshoe Falls. Horseshoe Falls is on the Canadian side. The river runs about 36 miles north, from Lake Erie to Lake Ontario. Three waterfalls make up the falls. Horseshoe is the widest. The other two are American Falls and Bridal Veil Falls, on the American side. The falls mark the start of a gorge about 7 miles long. Hard rock sits on top of a softer layer of shale. Water wears that soft layer away, so the falls creep upstream.',
       culture:
-        'The falls are one of the oldest tourist sites in North America. About twelve million people visit each year. Both towns grew up around the crowds. The New York state park draws about nine and a half million visitors a year. Visitors come in every season. Long before the towns, Haudenosaunee people lived along the river. They carried canoes overland around the falls. Boats could not pass them. Both sides have a town called Niagara Falls, and the Canadian one is larger. After dark the falls are lit with coloured lights, and fireworks follow in summer.',
+        'The falls are one of the oldest tourist sites in North America. About twelve million people visit each year. Both towns grew up around the crowds. The New York state park draws about nine and a half million visitors a year. Visitors come in every season. Long before the towns, Haudenosaunee people lived along the river. They carried canoes overland around the falls. Boats could not pass them. Both sides have a town called Niagara Falls, and the Canadian one is larger. After dark the falls are lit with colored lights, and fireworks follow in summer.',
       government:
         'No single government owns the falls. In 1950 the two countries signed the Niagara Diversion Treaty to share the water. Each side has its own parks body. New York State made the land around the falls its first state park. That happened in 1885. Ontario set up the Niagara Parks Commission in 1887. A treaty from 1909 created the International Joint Commission. That body settles water disputes between the two countries. The 1950 treaty also sets a minimum flow over the falls. At night and in winter, more water goes to the power plants.',
       economy:

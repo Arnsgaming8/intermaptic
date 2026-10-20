@@ -15,7 +15,7 @@ export default function Intro({ open, onDismiss }) {
         <p className="intro__license">CC BY-NC 4.0</p>
         <p className="intro__text">
           A holographic Earth that puts the United States and Canada side by side. Twenty-three
-          landmarks are pinned to the globe. They include capitals, cultural hubs, business centres
+          landmarks are pinned to the globe. They include capitals, cultural hubs, business centers
           and natural features, plus the border itself. Each one has its geography, culture,
           government and economy written down.
         </p>

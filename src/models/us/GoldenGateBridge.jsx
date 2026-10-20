@@ -10,8 +10,8 @@ import { MATERIAL } from '../../lib/theme.js'
  * NOTE ON PROPORTIONS: a suspension bridge is a wide, low silhouette, so this model
  * fills the full +/-0.5 footprint but only ~0.43 in height. Forcing the usual ~1.0
  * unit of height would have stretched the towers to three times the span and made the
- * bridge unrecognisable. Proportions here follow the real structure (227 m towers on a
- * 1,280 m main span, roughly scaled up 2.4x so the bridge still reads at globe scale).
+ * bridge unrecognizable. Proportions here follow the real structure (746 ft towers on a
+ * 4,200 ft main span, roughly scaled up 2.4x so the bridge still reads at globe scale).
  */
 
 const glow = (hovered, factor = 1) =>

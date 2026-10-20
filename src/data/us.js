@@ -50,7 +50,7 @@ export const US_STOPS = [
     lat: 40.7128,
     lng: -74.006,
     model: 'statue-of-liberty',
-    tagline: 'Money centre and the country\u2019s largest city',
+    tagline: 'Money center and the country\u2019s largest city',
     pair: 'finance',
     facts: [
       { label: 'Settled', value: '1624, as New Amsterdam' },
@@ -61,7 +61,7 @@ export const US_STOPS = [
       geography:
         'The Hudson River cuts a gap through the mountains. That gap made this a port. Manhattan stands on hard rock. Towers could rise on it because the rock holds the weight. The city spreads across five boroughs and several islands. The East River is a strait, and it is not a true river. The Atlantic Ocean and Long Island Sound border the city. Winters stay cold and snowy. Summers turn hot and humid. Storms and rising water threaten the low streets along the coast.',
       culture:
-        'Immigrants poured in through Castle Garden and later through Ellis Island. Newcomers keep coming. One in three residents was born outside the country. The schools hear more than two hundred languages. Chinatown, Little Italy and Harlem each grew from a different wave of arrivals. Broadway theatres and museums draw crowds all year. So do the concert halls. Pizza, bagels and street food are daily fare. Times Square pulls in visitors, and the New Year ball drop is famous. The Yankees and the Knicks are the home teams.',
+        'Immigrants poured in through Castle Garden and later through Ellis Island. Newcomers keep coming. One in three residents was born outside the country. The schools hear more than two hundred languages. Chinatown, Little Italy and Harlem each grew from a different wave of arrivals. Broadway theaters and museums draw crowds all year. So do the concert halls. Pizza, bagels and street food are daily fare. Times Square pulls in visitors, and the New Year ball drop is famous. The Yankees and the Knicks are the home teams.',
       government:
         'A mayor runs New York City with a City Council of fifty-one members. Zohran Mamdani took office in January 2026. He is the first Muslim mayor and the first South Asian one. The United Nations keeps its headquarters here. Each borough has its own president. The council writes local laws. It also has to approve the city budget. Voters elect a public advocate and a comptroller as well. Taxes go to the city, the state and the country. New York State can pass laws the city must follow.',
       economy:
@@ -86,7 +86,7 @@ export const US_STOPS = [
     lat: 37.7749,
     lng: -122.4194,
     model: 'golden-gate',
-    tagline: 'Technology centre on the Pacific coast',
+    tagline: 'Technology center on the Pacific coast',
     pair: 'pacific-tech',
     facts: [
       { label: 'Golden Gate Bridge', value: 'Opened 1937' },
@@ -95,7 +95,7 @@ export const US_STOPS = [
     ],
     sections: {
       geography:
-        'The Bay Area wraps around a bay that the ocean flooded long ago. Two faults cross the region, the San Andreas and the Hayward. Fog rolls in most afternoons. The Golden Gate is the strait that joins the bay to the ocean. Hills shape the city, so many streets climb steeply. Near the edges the bay turns shallow and muddy. Summers stay cool and grey. Most of the rain falls in winter. Cable cars still climb the hills downtown. The wider region stretches from wine country down to Silicon Valley.',
+        'The Bay Area wraps around a bay that the ocean flooded long ago. Two faults cross the region, the San Andreas and the Hayward. Fog rolls in most afternoons. The Golden Gate is the strait that joins the bay to the ocean. Hills shape the city, so many streets climb steeply. Near the edges the bay turns shallow and muddy. Summers stay cool and gray. Most of the rain falls in winter. Cable cars still climb the hills downtown. The wider region stretches from wine country down to Silicon Valley.',
       culture:
         'Writers called the Beats gathered in North Beach back in the 1950s. Technology took over later, and it is the city\u2019s biggest force now. Berkeley and Stanford bring in researchers from everywhere. Software and artificial intelligence companies drive the city again. The Chinatown here is one of the oldest in North America. Mission murals became famous. So did the Summer of Love in 1967. Sourdough bread and seafood are local staples. The 49ers started here. The Giants have played here since 1958.',
       government:
@@ -132,7 +132,7 @@ export const US_STOPS = [
       geography:
         'Chicago sits at the south end of Lake Michigan. The land around it is almost perfectly flat. Engineers reversed the Chicago River in 1900 to keep the lake clean. The river runs through the middle of downtown. A short canal here links the lake to the Mississippi River system. The lake cools it in summer. It warms the city in winter. Winters run long and cold, with wind off the water. Thunderstorms and tornadoes reach the area in spring and summer. The city sits on the edge of wide, flat prairie.',
       culture:
-        'An 1871 fire burned the city, and crews rebuilt it from the ground up. They used steel frames, and the skyscraper was born here. Blues and gospel music grew up in these neighborhoods. Polish, Irish, Italian and Mexican families each shaped a district. Deep-dish pizza and hot dogs are local favorites. The Art Institute and the Field Museum both sit near the lake. The Bulls, the Bears and the Cubs all play here. Street festivals fill the summer. The lakefront draws crowds all year. Theatre companies stage new plays every season.',
+        'An 1871 fire burned the city, and crews rebuilt it from the ground up. They used steel frames, and the skyscraper was born here. Blues and gospel music grew up in these neighborhoods. Polish, Irish, Italian and Mexican families each shaped a district. Deep-dish pizza and hot dogs are local favorites. The Art Institute and the Field Museum both sit near the lake. The Bulls, the Bears and the Cubs all play here. Street festivals fill the summer. The lakefront draws crowds all year. Theater companies stage new plays every season.',
       government:
         'Chicago is run by a mayor who works with a fifty-member City Council. The city splits into fifty wards, and each one elects an alderman. Mayor Brandon Johnson has fought to close big budget gaps. Cook County runs the courts, the jails and public health. Illinois sets the rules for schools and for city taxes. Property taxes pay for much of what the city does. Police, fire and trash collection are city departments. Voters elect the mayor. The term runs four years.',
       economy:
@@ -195,13 +195,13 @@ export const US_STOPS = [
     tagline: 'Two billion years of rock in one gorge',
     pair: 'natural-wonders',
     facts: [
-      { label: 'Length', value: '~446 km' },
-      { label: 'Depth', value: 'up to ~1.8 km' },
+      { label: 'Length', value: '~277 miles' },
+      { label: 'Depth', value: 'up to ~1.1 miles' },
       { label: 'Visits', value: 'Several million a year' },
     ],
     sections: {
       geography:
-        'The Grand Canyon is a deep gorge in northern Arizona. The Colorado River carved it out. It runs about 446 kilometres from end to end. In places it drops close to 1.8 kilometres. The layered walls show almost two billion years of history. The river at the bottom runs fast and cold. The plateau above stays high and dry. Pines and scrub grow on it. Winters bring snow to the rims, and the summers get very hot. Side canyons cut into the walls, and springs feed small streams below.',
+        'The Grand Canyon is a deep gorge in northern Arizona. The Colorado River carved it out. It runs about 277 miles from end to end. In places it drops close to 1.1 miles. The layered walls show almost two billion years of history. The river at the bottom runs fast and cold. The plateau above stays high and dry. Pines and scrub grow on it. Winters bring snow to the rims, and the summers get very hot. Side canyons cut into the walls, and springs feed small streams below.',
       culture:
         'Eleven Native nations call these lands their ancestral home. The park dates from 1919. Millions of people come every year. The Havasupai, Hopi and Navajo nations live nearby. Native people have lived in and around the gorge for thousands of years. Visitors come to hike, ride mules and look out from the rim. A railway from Williams has carried tourists since 1901. Painters and writers helped make the canyon famous. Rangers give talks about the rocks, the plants and the animals.',
       government:

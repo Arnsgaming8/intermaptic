@@ -86,7 +86,7 @@ export const MODEL_TUNING = {
    * Distance reveal, the main defence against a cluttered globe.
    *
    * Twenty-three landmarks all sit inside one continent, and cities on the eastern
-   * seaboard are only a few hundred kilometres apart - on a globe of this radius
+   * seaboard are only a few hundred miles apart - on a globe of this radius
    * that is a fraction of a model's own width, so drawn at full size the wide view
    * collapses into one pile. Instead the field is drawn small at full-globe range
    * (`farScale`) and eased up to full size as the camera comes in, reaching 1.0 at
